@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Job</title>
+</head>
+<body>
+    <nav>
+    <a href="signup.html">Sign Up</a> |
+    <a href="login.html">Login</a> |
+    <a href="addjob.html">Add Job</a> |
+</nav>
+    <h1>Edit Job</h1>
+    <form>
+    <fieldset>
+        <legend>Edit Job</legend>
+
+        <label for="jobid">Job ID:</label><br>
+        <input id="jobid" type="number" name="jobid" value="001" readonly><br><br>
+
+        <label for="jobtitle">Job Title:</label><br>
+        <input id="jobtitle" type="text" name="jobtitle" value="Front-End Developer" required><br><br>
+
+        <label for="salary">Salary:</label><br>
+        <input id="salary" type="number" name="salary" value="1000" required><br><br>
+
+        <label for="companyname">Company Name:</label><br>
+        <input id="companyname" type="text" name="companyname" value="5amsat" required><br><br>
+
+        <label for="status">Job Status:</label><br>
+        <select id="status" name="status" required>
+            <option value="open" selected>Open</option>
+            <option value="closed">Closed</option>
+        </select><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="5" required>Develop website UI</textarea><br><br>
+
+        <label for="year">Years of Experience:</label><br>
+        <input id="year" type="number" name="year" value="2" required><br><br>
+
+        <button type="submit">Save Changes</button>
+        <button type="reset">Cancel</button>
+    </fieldset>
+</form>
+</body>
+</html>

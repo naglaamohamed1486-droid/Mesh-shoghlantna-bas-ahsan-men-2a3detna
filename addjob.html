@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Job</title>
+</head>
+<body>
+     <nav>
+    <a href="signup.html">Sign Up</a> |
+    <a href="login.html">Login</a> |
+    <a href="addjob.html">Add Job</a> |
+    <a href="editjob.html">Edit Job</a> |
+</nav>
+    <h1>Add Job</h1>
+
+    <form>
+        <fieldset>
+            <legend>Job Details</legend>
+        <label for="jobid">Job ID:</label><br>
+        <input id="jobid" type="number" placeholder="Enter Job ID" name="jobid" required>
+        <br><br>
+
+        <label for="jobtitle">Job Title:</label><br>
+        <input id="jobtitle" type="text" placeholder="Enter Job Title" name="jobtitle" required>
+        <br><br>
+
+        <label for="salary">Salary:</label><br>
+        <input id="salary" type="number" placeholder="Enter Salary" name="salary" required>
+        <br><br>
+
+        <label for="companyname">Company Name:</label><br>
+        <input id="companyname" type="text" placeholder="Enter Company Name" name="companyname" required>
+        <br><br>
+
+        <label for="status">Job Status:</label><br>
+        <select id="status" name="status" required>
+            <option value="">--Select Status--</option>
+            <option value="open">Open</option>
+            <option value="closed">Closed</option>
+        </select>
+        <br><br>
+
+        <label for="year">Years of Experience:</label><br>
+        <input id="year" type="number" placeholder="Enter Years of Experience" name="year" required>
+        <br><br>
+
+        <label for="description">Description:</label><br>   
+        <textarea id="description" placeholder="Enter Description" name="description" rows="5" required></textarea>
+        <br><br>
+
+        <button type="submit">Add Job</button>
+        </fieldset>
+    </form>
+</body>
+</html>

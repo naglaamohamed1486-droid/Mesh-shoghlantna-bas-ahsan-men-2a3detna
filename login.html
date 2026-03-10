@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="styl.css">
+    <!-- <link rel="stylesheet" href="styl.css"> -->
 </head>
 <body>
+    <section>
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="login.html">Login</a> |
+        <a href="index.html">Home</a> 
+        <a href="login.html">Login</a> 
         <a href="signup.html">Sign Up</a>
+        <a href="Profile.html">Profile</a>
     </nav>
 
     <hr>
@@ -22,15 +24,10 @@
 
     <form >
 
-        <div>
+        <div class="Form">
             <label for="username">Username:</label><br>
             <input 
-                id="username" 
-                name="username"
-                type="text" 
-                placeholder="Enter username" 
-                required
-            >
+                id="username"  name="username" type="text"   placeholder="Enter username"  required >
         </div>
 
         <br>
@@ -38,12 +35,7 @@
         <div class="input1">
             <label for="email">Email:</label><br>
             <input 
-                id="email" 
-                name="email"
-                type="email" 
-                placeholder="Enter your email" 
-                required
-            >
+                id="email" name="email" type="email"  placeholder="Enter your email"  required>
         </div>
 
         <br>
@@ -51,13 +43,7 @@
         <div class="input2">
             <label for="password">Password:</label><br>
             <input 
-                id="password" 
-                name="password"
-                type="password" 
-                placeholder="Enter your password" 
-                minlength="6"
-                required
-            >
+                id="password" name="password"type="password" placeholder="Enter your password" minlength="6" required >
         </div>
 
         <br>
@@ -66,21 +52,30 @@
             <label for="role">Role:</label><br>
             <select id="role" name="role" required>
                 <option value="">Select role</option>
-                <option value="admin">Admin</option>
-                <option value="teacher">Teacher</option>
+                <option value="admin">Company Admin</option>
+                <option value="User">User</option>
             </select>
         </div>
 
         <br>
 
         <button type="submit">Login</button>
-
+<button type="reset">Clear</button>
     </form>
 
     <p>
         Don't have an account?
         <a href="signup.html">Sign Up</a>
     </p>
+    
+    </section>
+    
+        <footer>
+            <hr>
+            <br>
+<p>© 2026 JobBoard. All rights reserved.</p>
+        </footer>
+    
 
 </body>
 </html>

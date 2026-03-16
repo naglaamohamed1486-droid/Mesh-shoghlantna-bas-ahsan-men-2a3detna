@@ -1,88 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-   background: linear-gradient(to right, #f7f9fc, #e0f0f5);
-   margin: 0;
-   padding: 0;
+    background: linear-gradient(to right, #f7f9fc, #e0f0f5);
 }
 
 .head{
     background-color: rgb(135, 181, 184);
     padding:3px 7px;
-    
-
 }
 
 .head ul {
     list-style-type: none;
-    padding: 0;
     display: flex;
     align-items: center;
     gap:20px;
-    
 }
 
-.logo {
-    margin-right: left;
+header.head ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header.head ul li a:hover {
+    color: #f7c59f;
 }
 
 .h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: rgb(41, 41, 41);
+    margin-top: 40px; /*5aleet el margin-top 40px 3ashan yeb2a fe fasel beeno w been el hover*/
+    font-size: 40px;
 }
 
 .form {
-   background-color: white;
-   max-width: 650px;
-   margin: 40px auto;
-   padding: 30px 40px;
-   border-radius: 15px;
-   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-   transition: transform 0.3s;
+    background-color: white;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
 
 h2{
-    color:rgb(156, 186, 176)
+    color:rgb(156, 186, 176);
+    margin-bottom:20px;
 }
 
+/* CSS Explanation for --Select Status-- placeholder:
+1. Use :invalid pseudo-class to target the default placeholder:
+- :invalid applies when the select's value is empty (or invalid)
+- This is how we style the placeholder differently from other options*/
+select:invalid {
+    color: gray;  /* Makes the placeholder text appear gray */
+}
+
+/*Set all other options color to black:*/
+select option {
+    color: black;/* Makes all other selectable options appear in black */
+}
+/*Outcome:
+     - On page load, "--Select Status--" appears gray
+     - When user selects "Open" or "Closed", the text turns black
+     - Works across modern browsers
+
+  Note: Directly styling an <option> with color does not always work in all browsers,
+        so this :invalid trick is the reliable method for placeholder-like behavior.
+*/
+
 input, select, textarea {
-            width: 100%;
-            padding: 12px 15px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 15px;
-            transition: border 0.3s, box-shadow 0.3s;
-        }
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
 
 button {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 15px;
-            margin-right: 10px;
-            transition: all 0.3s;
-        }
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
 .reset {
-    
     background-color: #f5f5f5;
-            color: #333;
+    color: #333;
 }
 
 .submit {
-   background: linear-gradient(45deg, #2ca9bc, #238f9a);
-            color: white;
+    background: linear-gradient(45deg, #2ca9bc, #238f9a);
+    color: white;
 }
 
 .submit:hover{
     background: linear-gradient(45deg, #238f9a, #1d7d86);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .reset:hover{
-                background-color: #e0e0e0;
-            transform: translateY(-2px);
-
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
 }
 
+
+footer {
+    background-color: #2c3e50; 
+    color: #fff;
+    padding: 50px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer hr {
+    border: 0.5px solid #444;
+    margin-bottom: 30px;
+}
+
+footer .f {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+footer .footer-col {
+    flex: 1 1 200px; 
+}
+
+footer .footer-col h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f7c59f; 
+}
+
+footer .footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f7c59f;
+}
+
+footer a {
+    color: #fff;         
+    text-decoration: none;  
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f7c59f;        
+    text-decoration: none; 
+}
+
+footer .f2 {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+footer .f2 p {
+    text-align: center;
+    color: #aaa;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    footer .f {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-col {
+        margin-bottom: 30px;
+    }
+}

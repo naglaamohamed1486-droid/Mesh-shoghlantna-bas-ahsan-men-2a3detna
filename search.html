@@ -23,7 +23,7 @@
   <h1>Find Jobs</h1>
   <h4>Discover your next career opportunity</h4>
   <br>
-  <form>
+  <form class="filter">
     <div class="searchdiv">
     <input type="text" id="search" placeholder="Search Jobs..." width="400px">
     <button type="submit" id="sbtn">search</button>
@@ -31,7 +31,7 @@
     <br>
     <br>
     <div class="tags">
-    <select name="location " id="location ">
+    <select name="location" id="location">
         <option value="All Locations" selected>All Locations</option>
         <option value="Cairo">Cairo</option>
         <option value="Giza">Giza</option>
@@ -57,7 +57,7 @@
         <option value="Senior">Senior</option>
     </select>
     <select name="Tags" id="Tags">
-        <option value="All-Tags" selected>All-Tags</option>
+        <option value="All-Tags" selected>All Tags</option>
         <option value="tech">Tech & IT</option>
         <option value="design">Design & Creative</option>
         <option value="marketing">Marketing & Sales</option>
@@ -77,9 +77,10 @@
   <div class="job-list">
     <div class="job-card" style="border: #08358e 3px solid; margin-bottom: 10px;"  >
         <img src="./assets/imgs/graphic-design.webp" width="450vw" height="250wv">
-        <h3 id="job-name">Graphic Designer</h3>
+        <h3 class="job-name">Graphic Designer</h3>
         <p class="company">CreativeStudio</p>
         <p class="type">Part-Time</p>
+        <P class="level">Level</P>
         <p class="location"> <svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#001166"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Alexandria</p>
         <p class="salary range"> <svg fill="#8ef0b4" width="14px" height="18px" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dollar</title> <path d="M4.88 15.24v-4.64c0.88 0.32 1.52 1.2 1.52 2.2 0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84c0-1.92-1.36-3.56-3.2-3.96v-0.88c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v0.88c-1.84 0.4-3.2 2-3.2 3.96s1.36 3.56 3.2 3.96v4.64c-0.88-0.32-1.52-1.2-1.52-2.2 0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84c0 1.92 1.36 3.56 3.2 3.96v0.88c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-0.88c1.84-0.4 3.2-2 3.2-3.96s-1.4-3.56-3.2-3.96zM1.68 12.8c0-1 0.64-1.88 1.52-2.2v4.4c-0.88-0.32-1.52-1.2-1.52-2.2zM4.88 21.4v-4.4c0.88 0.32 1.52 1.2 1.52 2.2s-0.64 1.84-1.52 2.2z"></path> </g></svg>4,000$-7,000$</p>
       
@@ -96,9 +97,10 @@
 
     <div class="job-card" style="border: #08358e 3px solid; margin-bottom: 10px;"  >
         <img src="./assets/imgs/civil.jpg" width="450vw" height="250vw">
-        <h3 id="job-name">Civil Engineer</h3>
+        <h3 class="job-name">Civil Engineer</h3>
         <p class="company">BuildIt</p>
         <p class="type">Full-Time</p>
+        <P class="level">Level</P>
         <p class="location"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#001166"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Alexandria</p>
         <p class="salary range"> <svg fill="#8ef0b4" width="14px" height="18px" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dollar</title> <path d="M4.88 15.24v-4.64c0.88 0.32 1.52 1.2 1.52 2.2 0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84c0-1.92-1.36-3.56-3.2-3.96v-0.88c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v0.88c-1.84 0.4-3.2 2-3.2 3.96s1.36 3.56 3.2 3.96v4.64c-0.88-0.32-1.52-1.2-1.52-2.2 0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84c0 1.92 1.36 3.56 3.2 3.96v0.88c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-0.88c1.84-0.4 3.2-2 3.2-3.96s-1.4-3.56-3.2-3.96zM1.68 12.8c0-1 0.64-1.88 1.52-2.2v4.4c-0.88-0.32-1.52-1.2-1.52-2.2zM4.88 21.4v-4.4c0.88 0.32 1.52 1.2 1.52 2.2s-0.64 1.84-1.52 2.2z"></path> </g></svg>EGP 12,000-20,000</p>
       
@@ -115,9 +117,10 @@
 
     <div class="job-card" style="border: #08358e 3px solid; margin-bottom: 10px;"  >
         <img src="./assets/imgs/content writer.jpg" width="450vw" height="250wv">
-        <h3 id="job-name">Content Writer</h3>
+        <h3 class ="job-name">Content Writer</h3>
         <p class="company">WordWorks</p>
         <p class="type">Freelance</p>
+        <P class="level">Level</P>
         <p class="location"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#001166"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Cairo</p>
         <p class="salary range"> <svg fill="#8ef0b4" width="14px" height="18px" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dollar</title> <path d="M4.88 15.24v-4.64c0.88 0.32 1.52 1.2 1.52 2.2 0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84c0-1.92-1.36-3.56-3.2-3.96v-0.88c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v0.88c-1.84 0.4-3.2 2-3.2 3.96s1.36 3.56 3.2 3.96v4.64c-0.88-0.32-1.52-1.2-1.52-2.2 0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84c0 1.92 1.36 3.56 3.2 3.96v0.88c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-0.88c1.84-0.4 3.2-2 3.2-3.96s-1.4-3.56-3.2-3.96zM1.68 12.8c0-1 0.64-1.88 1.52-2.2v4.4c-0.88-0.32-1.52-1.2-1.52-2.2zM4.88 21.4v-4.4c0.88 0.32 1.52 1.2 1.52 2.2s-0.64 1.84-1.52 2.2z"></path> </g></svg>EGP 3,000-6,000</p>
        
@@ -134,10 +137,11 @@
     </div>
     <div class="job-card" style="border: #08358e 3px solid; margin-bottom: 10px;"  >
         <img src="./assets/imgs/customer support.jpg" width="450vw" height="250vw">
-        <h3 id="job-name">Customer Support Specialist</h3>
+        <h3 class ="job-name">Customer Support Specialist</h3>
         <p class="company">HelpDesk Co</p>
-        <p class="type"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#001166"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Remote</p>
-        <p class="location">Cairo</p>
+         <P class="level">Level</P>
+        <p class="type">Part time</p>
+        <p class="location"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#001166"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Remote</p>
         <p class="salary range"> <svg fill="#8ef0b4" width="14px" height="18px" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dollar</title> <path d="M4.88 15.24v-4.64c0.88 0.32 1.52 1.2 1.52 2.2 0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84c0-1.92-1.36-3.56-3.2-3.96v-0.88c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v0.88c-1.84 0.4-3.2 2-3.2 3.96s1.36 3.56 3.2 3.96v4.64c-0.88-0.32-1.52-1.2-1.52-2.2 0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84c0 1.92 1.36 3.56 3.2 3.96v0.88c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-0.88c1.84-0.4 3.2-2 3.2-3.96s-1.4-3.56-3.2-3.96zM1.68 12.8c0-1 0.64-1.88 1.52-2.2v4.4c-0.88-0.32-1.52-1.2-1.52-2.2zM4.88 21.4v-4.4c0.88 0.32 1.52 1.2 1.52 2.2s-0.64 1.84-1.52 2.2z"></path> </g></svg>EGP 5,000-9,000</p>
        
             <ul style="list-style: none;" class="tag">
@@ -154,9 +158,10 @@
 
     <div class="job-card" style="border: #08358e 3px solid; margin-bottom: 10px;"  >
         <img src="./assets/imgs/cooking.jpg" width="450vw" height="250vw">
-        <h3 id="job-name">Chef</h3>
+        <h3 class ="job-name">Chef</h3>
         <p class="company">Royal Restaurant</p>
         <p class="type">Full-Time</p>
+        <P class="level">Level</P>
         <p class="location"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#001166"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Paris</p>
         <p class="salary range">  <svg fill="#8ef0b4" width="14px" height="18px" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dollar</title> <path d="M4.88 15.24v-4.64c0.88 0.32 1.52 1.2 1.52 2.2 0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84c0-1.92-1.36-3.56-3.2-3.96v-0.88c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v0.88c-1.84 0.4-3.2 2-3.2 3.96s1.36 3.56 3.2 3.96v4.64c-0.88-0.32-1.52-1.2-1.52-2.2 0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84c0 1.92 1.36 3.56 3.2 3.96v0.88c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-0.88c1.84-0.4 3.2-2 3.2-3.96s-1.4-3.56-3.2-3.96zM1.68 12.8c0-1 0.64-1.88 1.52-2.2v4.4c-0.88-0.32-1.52-1.2-1.52-2.2zM4.88 21.4v-4.4c0.88 0.32 1.52 1.2 1.52 2.2s-0.64 1.84-1.52 2.2z"></path> </g></svg>EUR 6,000-12,000</p>
        
@@ -173,9 +178,10 @@
     </div>
     <div class="job-card" style="border: #08358e 3px solid; margin-bottom: 10px;"  >
         <img src="./assets/imgs/financial.jpg" width="450vw" height="250vw">
-        <h3 id="job-name">Financial Analyst</h3>
+        <h3 class ="job-name">Financial Analyst</h3>
         <p class="company">MoneyCorp</p>
         <p class="type">Full-Time</p>
+        <P class="level">Level</P>
         <p class="location"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#001166"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Dubi</p>
         <p class="salary range"> <svg fill="#8ef0b4" width="14px" height="18px" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dollar</title> <path d="M4.88 15.24v-4.64c0.88 0.32 1.52 1.2 1.52 2.2 0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84c0-1.92-1.36-3.56-3.2-3.96v-0.88c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v0.88c-1.84 0.4-3.2 2-3.2 3.96s1.36 3.56 3.2 3.96v4.64c-0.88-0.32-1.52-1.2-1.52-2.2 0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84c0 1.92 1.36 3.56 3.2 3.96v0.88c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-0.88c1.84-0.4 3.2-2 3.2-3.96s-1.4-3.56-3.2-3.96zM1.68 12.8c0-1 0.64-1.88 1.52-2.2v4.4c-0.88-0.32-1.52-1.2-1.52-2.2zM4.88 21.4v-4.4c0.88 0.32 1.52 1.2 1.52 2.2s-0.64 1.84-1.52 2.2z"></path> </g></svg>$ 10,000-18,000</p>
        
@@ -192,9 +198,10 @@
     </div>
     <div class="job-card" style="border: #08358e 3px solid; margin-bottom: 10px;"  >
         <img src="./assets/imgs/photographer.jpg" width="450vw" height="250wv">
-        <h3 id="job-name">Photographer</h3>
+        <h3 class ="job-name">Photographer</h3>
         <p class="company">Vision Studio</p>
         <p class="type">Freelance</p>
+        <P class="level">Level</P>
         <p class="location"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#001166"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Giza</p>
         <p class="salary range"> <svg fill="#8ef0b4" width="14px" height="18px" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dollar</title> <path d="M4.88 15.24v-4.64c0.88 0.32 1.52 1.2 1.52 2.2 0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84c0-1.92-1.36-3.56-3.2-3.96v-0.88c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v0.88c-1.84 0.4-3.2 2-3.2 3.96s1.36 3.56 3.2 3.96v4.64c-0.88-0.32-1.52-1.2-1.52-2.2 0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84c0 1.92 1.36 3.56 3.2 3.96v0.88c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-0.88c1.84-0.4 3.2-2 3.2-3.96s-1.4-3.56-3.2-3.96zM1.68 12.8c0-1 0.64-1.88 1.52-2.2v4.4c-0.88-0.32-1.52-1.2-1.52-2.2zM4.88 21.4v-4.4c0.88 0.32 1.52 1.2 1.52 2.2s-0.64 1.84-1.52 2.2z"></path> </g></svg>EGP 4,000-10,000</p>
        
@@ -211,9 +218,10 @@
     </div>
     <div class="job-card" style="border: #08358e 3px solid; margin-bottom: 10px;"  >
         <img src="./assets/imgs/transilator.jpg" width="450vw" height="250wv">
-        <h3 id="job-name">Translator (Arabic-English)</h3>
+        <h3 class ="job-name">Translator (Arabic-English)</h3>
         <p class="company">Global Translations</p>
         <p class="type">Contract</p>
+        <P class="level">Level</P>       
         <p class="location"><svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#001166"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="#001166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>Remote</p>
         <p class="salary range"> <svg fill="#8ef0b4" width="14px" height="18px" viewBox="0 0 10 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dollar</title> <path d="M4.88 15.24v-4.64c0.88 0.32 1.52 1.2 1.52 2.2 0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84c0-1.92-1.36-3.56-3.2-3.96v-0.88c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v0.88c-1.84 0.4-3.2 2-3.2 3.96s1.36 3.56 3.2 3.96v4.64c-0.88-0.32-1.52-1.2-1.52-2.2 0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84c0 1.92 1.36 3.56 3.2 3.96v0.88c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-0.88c1.84-0.4 3.2-2 3.2-3.96s-1.4-3.56-3.2-3.96zM1.68 12.8c0-1 0.64-1.88 1.52-2.2v4.4c-0.88-0.32-1.52-1.2-1.52-2.2zM4.88 21.4v-4.4c0.88 0.32 1.52 1.2 1.52 2.2s-0.64 1.84-1.52 2.2z"></path> </g></svg>EGP 5,000-11,000</p>
        
@@ -232,6 +240,7 @@
   </div>
 
 
+  <script src="./js/search.js"></script>
     
 </body>
 

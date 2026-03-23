@@ -41,18 +41,47 @@ const tagsContainer = document.getElementById("tags");
     });
 
     const gallery = document.getElementById("gallery");
-    job.gallery.forEach(img => {
-      let div = document.createElement("div");
-      div.className = "ph";
 
-      let image = document.createElement("img");
-      image.src = img;
+const track = document.createElement("div");
+track.className = "slider-track";
+gallery.appendChild(track);
 
-      div.appendChild(image);
-      gallery.appendChild(div);
-    });
+job.gallery.forEach(img => {
+  let div = document.createElement("div");
+  div.className = "ph";
+  let image = document.createElement("img");
+  image.src = img;
+  div.appendChild(image);
+  track.appendChild(div);
+});
+
+// dots
+const dotsContainer = document.getElementById("dots");
+let current = 0;
+
+job.gallery.forEach((_, i) => {
+  let dot = document.createElement("div");
+  dot.className = "dot" + (i === 0 ? " active" : "");
+  dot.addEventListener("click", () => goTo(i));
+  dotsContainer.appendChild(dot);
+});
+
+function goTo(index) {
+  current = index;
+  track.style.transform = `translateX(-${current * 100}%)`;
+  document.querySelectorAll(".dot").forEach((d, i) =>
+    d.classList.toggle("active", i === current)
+  );
+}
+
+document.getElementById("prev").addEventListener("click", () =>
+  goTo(current > 0 ? current - 1 : job.gallery.length - 1)
+);
+
+document.getElementById("next").addEventListener("click", () =>
+  goTo(current < job.gallery.length - 1 ? current + 1 : 0)
+);
 
 
-
-
+ 
 })

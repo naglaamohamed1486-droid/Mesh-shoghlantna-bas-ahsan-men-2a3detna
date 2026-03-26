@@ -42,7 +42,6 @@ document.getElementById("signupForm").addEventListener("submit", function(e) {
     }
     localStorage.setItem("username", username);
     localStorage.setItem("email", email);
-    localStorage.setItem("name", name);
     localStorage.setItem("password", password);
     localStorage.setItem("role", role);
     

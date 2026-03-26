@@ -42,10 +42,12 @@
   </nav>
   </header>
  <main>
+    <div class="float"></div>
     <div class="hero">
   <h1>Find Jobs</h1>
   <h4>Discover your next career opportunity</h4>
-</div>
+    </div>
+
   <form class="filter">
     <div class="searchdiv">
     <input type="text" id="search" placeholder="Search Jobs..." width="400px">
@@ -89,7 +91,7 @@
     </select>
     </div>
   </form>
-
+</div>
   <h3> jobs found</h3>
   <div class="job">
   <div class="job-list">
@@ -123,49 +125,60 @@
 <script src="./js/search.js"></script>
 </body>
 
-<footer>
-    <hr>
-    <div class="f">
-    <div class="footer-col">
-      <h3>sammonyy</h3>
-      <p>Find your dream job or hire the best talent.</p>
+<footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <div class="footer__brand-name">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#2B3EEE"/>
+              <path d="M20 10a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v3h8v-3Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M24 22V13a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            saboba
+          </div>
+          <p class="footer__brand-desc">Find your dream job or hire the best talent — all in one place.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Job Seekers</h4>
+          <ul class="footer__col-links">
+            <li><a href="search.html">Browse Jobs</a></li>
+            <li><a href="AppliedJobs.html">Applications</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Employers</h4>
+          <ul class="footer__col-links">
+            <li><a href="joblist.html">Jobs List</a></li>
+            <li><a href="addjob.html">Add Job</a></li>
+            <li><a href="editjob.html">Edit Job</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Platform</h4>
+          <ul class="footer__col-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 JobFlow. All rights reserved.</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
     </div>
-<ul>
-    <li style="display: inline-block;" >
-        <h4>Job Seekers</h4>
-        <ul>
-            <li><a href="search.html" style="text-decoration: none;">Browse Jobs</a></li>
-           
-            <li><a href="AppliedJobs.html" style="text-decoration: none;">Applications</a></li>
-        </ul>
-    </li>
-
-    <li style="display: inline-block;">
-        <h4>Employers</h4>
-        <ul>
-             <li><a href="joblist.html" style="text-decoration: none;">Jobs List</a></li>
-            <li><a href="addjob.html" style="text-decoration: none;">Add Job</a></li>
-            <li><a href="editjob.html" style="text-decoration: none;">Edit Job</a></li>
-
-        </ul>
-    </li>
-
-    <li  style="display: inline-block;">
-        <h4>Platform</h4>
-        <ul>
-            <li><a href="index.html" style="text-decoration: none;">Home</a></li>
-            <li><a href="signup.html" style="text-decoration: none;">Sign up</a></li>
-            <li><a href="login.html" style="text-decoration: none;">Login</a></li>
-
-        </ul>
-    </li>
-    </ul>
-
-    <hr>
-</li>
-<div class="f2">
-    <p style="text-align: center;"> &copy 2026 sammonyy. All rights reserved.</p>
-    </div>
-</footer>
-
+  </footer>
 </html>

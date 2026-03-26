@@ -1,108 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobFlow — Profile</title>
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/profile.css" />
 </head>
 <body>
-     <header>
-    <ul class="nav">
-        <li style="display: inline;" class="logo"><a href="./index.html"><svg fill="#000000" width="30px" height="40px" viewBox="0 0 24 24" id="work" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M16,4a1,1,0,0,0-1-1H9A1,1,0,0,0,8,4V7h8Zm5,16V8a1,1,0,0,0-1-1H4A1,1,0,0,0,3,8V20a1,1,0,0,0,1,1H20A1,1,0,0,0,21,20Z" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="secondary" d="M11,14H8.64A4,4,0,0,1,5,11.58L3.18,7.43A1,1,0,0,1,4,7H20a1,1,0,0,1,.82.43L19,11.58A4,4,0,0,1,15.36,14H13" style="fill: none; stroke: #2ca9bc; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><rect id="primary-2" data-name="primary" x="11" y="13" width="2" height="2" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></rect></g></svg></a></li>
-        <li style="display: inline;"> <a href="./index.html">Home |</a></li>
-        <li style="display: inline;"><a href="./search.html"> Jobs |</a></li>
-        <li style="display: inline;"><a href="./AppliedJobs.html">Applied |</a></li>
-        <li style="display: inline;"> <a href="./profile.html"> My profile |</a></li>
-        <li style="display: inline;"><a href="./login.html">Login |</a></li>
-        <li style="display: inline;"><a href="./signup.html">Sign up</a></li>
-       
-    </ul>
-  </header>
 
-  <!-- Profile Section -->
-    <section>
-        <h1>User Profile</h1>
-        
-        <div>
-            <h2>Profile Information</h2>
-            
-            <div>
-                <label>Username:</label>
-                <span>John Doe</span>
-            </div>
-            
-            <div>
-                <label>Email:</label>
-                <span>john.doe@example.com</span>
-            </div>
-            
-            <div>
-                <label>Is Company Admin?</label>
-                <span>Yes</span>
-            </div>
-            
-            <div>
-                <label>Company Name:</label>
-                <span>Tech Corp</span>
-            </div>
-            
-            <div>
-                <label>Jobs Posted:</label>
-                <span>5</span>
-            </div>
-        </div>
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar__logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <rect width="32" height="32" rx="8" fill="#2B3EEE"/>
+        <path d="M20 10a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v3h8v-3Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M24 22V13a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      saboba
+    </a>
 
-        <div>
-            <button>Edit Profile</button>
-            <button>Logout</button>
-        </div>
-    </section>
-  <hr>
+    <!-- الـ nav links بيتبنى بالـ JS -->
+    <ul class="navbar__links" id="navLinks"></ul>
+
+    <div class="navbar__actions">
+      <span class="navbar__username" id="navUsername"></span>
+      <a href="login.html" class="btn btn--ghost">Logout</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       PROFILE HERO BANNER
+  ══════════════════════════════════════ -->
+  <div class="profile-banner"></div>
+
+  <!-- ══════════════════════════════════════
+       PROFILE CONTENT — بيتبنى بالـ JS
+  ══════════════════════════════════════ -->
+  <main class="profile-main">
+    <div class="container">
+      <div id="profileContent"></div>
+    </div>
+  </main>
+
+  <script src="./js/profile.js"></script>
 </body>
-
-<footer>
-    <hr>
-    <div class="f">
-    <div class="footer-col">
-      <h3>sammonyy</h3>
-      <p>Find your dream job or hire the best talent.</p>
-    </div>
-<ul>
-    <li style="display: inline-block;" >
-        <h4>Job Seekers</h4>
-        <ul>
-            <li><a href="search.html" style="text-decoration: none;">Browse Jobs</a></li>
-           
-            <li><a href="AppliedJobs.html" style="text-decoration: none;">Applications</a></li>
-        </ul>
-    </li>
-
-    <li style="display: inline-block;">
-        <h4>Employers</h4>
-        <ul>
-             <li><a href="joblist.html" style="text-decoration: none;">Jobs List</a></li>
-            <li><a href="addjob.html" style="text-decoration: none;">Add Job</a></li>
-            <li><a href="editjob.html" style="text-decoration: none;">Edit Job</a></li>
-
-        </ul>
-    </li>
-
-    <li  style="display: inline-block;">
-        <h4>Platform</h4>
-        <ul>
-            <li><a href="index.html" style="text-decoration: none;">Home</a></li>
-            <li><a href="signup.html" style="text-decoration: none;">Sign up</a></li>
-            <li><a href="login.html" style="text-decoration: none;">Login</a></li>
-
-        </ul>
-    </li>
-    </ul>
-
-    <hr>
-</li>
-<div class="f2">
-    <p style="text-align: center;"> &copy 2026 sammonyy. All rights reserved.</p>
-    </div>
-</footer>
-
 </html>

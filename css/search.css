@@ -16,9 +16,9 @@
      align-content:space-around;
      padding: 5px 10px 10px 20px;
      margin-bottom: 5px;
-     border: #38373d solid 1px;
-     background-color: hsla(250, 100%, 90%);
-            
+     background: linear-gradient(135deg, #FFFFFF, #F6F7F9);
+     backdrop-filter: blur(12px);
+    border:  #E5E7EB;;  
    }
 
 .nav a{
@@ -38,6 +38,9 @@
 }
 main{
     margin-top: 80px ;
+}
+.hero{
+
 }
 h1{
     color: rgb(0, 0, 108);

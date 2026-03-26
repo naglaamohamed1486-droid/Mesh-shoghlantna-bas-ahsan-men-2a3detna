@@ -209,7 +209,7 @@ footer .f2 p {
     display: flex;
     align-items: center;
     gap: 15px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 115, 0, 0.1);
     padding: 15px 5px;
     border-radius: 10px;
     margin-bottom: 15px;

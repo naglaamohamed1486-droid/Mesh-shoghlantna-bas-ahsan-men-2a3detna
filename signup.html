@@ -3,14 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Sign Up</title>
-<!-- <link rel="stylesheet" href="style2.css"> -->
+<link rel="stylesheet" href="./css/signup.css">
+<script src="js/signup.js" defer></script>
 </head>
 
 <body>
-<section>
- <header>
+    <header>
     <ul class="nav">
-        <li style="display: inline;" class="logo"><a href="./index.html"><svg fill="#000000" width="30px" height="40px" viewBox="0 0 24 24" id="work" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M16,4a1,1,0,0,0-1-1H9A1,1,0,0,0,8,4V7h8Zm5,16V8a1,1,0,0,0-1-1H4A1,1,0,0,0,3,8V20a1,1,0,0,0,1,1H20A1,1,0,0,0,21,20Z" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="secondary" d="M11,14H8.64A4,4,0,0,1,5,11.58L3.18,7.43A1,1,0,0,1,4,7H20a1,1,0,0,1,.82.43L19,11.58A4,4,0,0,1,15.36,14H13" style="fill: none; stroke: #2ca9bc; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><rect id="primary-2" data-name="primary" x="11" y="13" width="2" height="2" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></rect></g></svg></a></li>
+
+    <a href="index.html" class="logo">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="8" fill="#2B3EEE"/>
+        <path d="M20 10a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v3h8v-3Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M24 22V13a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 17h-2.4A3 3 0 0 1 9 14.7L7.6 11.3A1 1 0 0 1 8.6 10H23.4a1 1 0 0 1 .9 1.3L23 14.7A3 3 0 0 1 20.6 17H18" fill="none" stroke="#F46734" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="14" y="16" width="4" height="3" rx="1" fill="none" stroke="#fff" stroke-width="1.8"/>
+    </svg>
+    saboba
+</a>
+<br>
+        <!-- <li style="display: inline;" class="logo"><a href="./index.html"><svg fill="#000000" width="30px" height="40px" viewBox="0 0 24 24" id="work" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M16,4a1,1,0,0,0-1-1H9A1,1,0,0,0,8,4V7h8Zm5,16V8a1,1,0,0,0-1-1H4A1,1,0,0,0,3,8V20a1,1,0,0,0,1,1H20A1,1,0,0,0,21,20Z" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="secondary" d="M11,14H8.64A4,4,0,0,1,5,11.58L3.18,7.43A1,1,0,0,1,4,7H20a1,1,0,0,1,.82.43L19,11.58A4,4,0,0,1,15.36,14H13" style="fill: none; stroke: #2ca9bc; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><rect id="primary-2" data-name="primary" x="11" y="13" width="2" height="2" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></rect></g></svg></a></li> -->
         <li style="display: inline;"> <a href="./index.html">Home |</a></li>
         <li style="display: inline;"><a href="./search.html"> Jobs |</a></li>
         <li style="display: inline;"><a href="./AppliedJobs.html">Applied |</a></li>
@@ -20,43 +32,45 @@
        
     </ul>
   </header>
-  <hr>
+<section>
+ 
+  
 
 <h1>Welcome to sign up page.</h1>
 <p> You now can create an account with the form below  but note that all fields are required .</p>
 
-<form>
+<form id="signupForm">
 
 <div class="user">
 <label for="username">Username:</label><br>
-<input type="text" id="username" name="username" required>
+<input type="text" id="username" name="username" placeholder="Enter your username" required>
 </div>
 
 <br>
 
 <div class="mail">
 <label for="email">Email:</label><br>
-<input type="email" id="email" name="email" required>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
 </div>
 
 <br>
 
 <div class="pass">
 <label for="password">Password:</label><br>
-<input type="password" id="password" name="password" minlength="6" required>
+<input type="password" id="password" name="password" placeholder="Enter your pass" minlength="6" required>
 </div>
 
 <br>
 
 <div class="confirm_pass">
 <label for="confirm_password">Confirm Password:</label><br>
-<input type="password" id="confirm_password" name="confirm_password" minlength="6" required>
+<input type="password" id="confirm_password" name="confirm_password" placeholder="Enter your pass again" minlength="6" required>
 </div>
 
 <br>
 <div class="age">
 <label for="age">Age:</label><br>
-<input type="number" id="age" name="age" min="0" required>
+<input type="number" id="age" name="age" min="0"  placeholder="Enter your age"  required>
 </div>
 <div class="role">
 <label for="role">Role:</label><br>
@@ -69,16 +83,16 @@
 
 <div class="company">
 <label for="company">Company Name:</label><br>
-<input type="text" id="company" name="company">
+<input type="text" id="company" placeholder="Enter Company Name " name="company">
 </div>
-<div class="gender">
+<!-- <div class="gender">
 <label for="gender">Gender:</label><br>
 <select id="gender" name="gender" required>
 <option value="">Select gender</option> 
 <option value="male">Male</option>
 <option value="female">Female</option>
 </select>
-</div>
+</div> -->
 
 
 
@@ -96,10 +110,48 @@ if you already have an account you can log in directly.
 
 </section>
 
+<section class="sec2">
+
+<div class="logo2">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="#2B3EEE"/>
+            <path d="M20 10a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v3h8v-3Z" fill="none" stroke="#fff" stroke-width="1.8"/>
+            <path d="M24 22V13a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z" fill="none" stroke="#fff" stroke-width="1.8"/>
+            <path d="M14 17h-2.4A3 3 0 0 1 9 14.7L7.6 11.3A1 1 0 0 1 8.6 10H23.4a1 1 0 0 1 .9 1.3L23 14.7A3 3 0 0 1 20.6 17H18" fill="none" stroke="#F46734" stroke-width="1.8"/>
+            <rect x="14" y="16" width="4" height="3" rx="1" fill="none" stroke="#fff" stroke-width="1.8"/>
+        </svg>
+    </div>
+
+    <h1>Join JobFlow</h1>
+    <br><br>
+    <p>Create your account and unlock access to thousands of curated job opportunities</p>
+
+    <div class="feature">
+        <span>✔</span>
+        <p>Access to 12,000+ curated job listings</p>
+    </div>
+
+    <div class="feature">
+        <span>✔</span>
+        <p>AI-powered job recommendations</p>
+    </div>
+
+    <div class="feature">
+        <span>✔</span>
+        <p>Track applications in real-time</p>
+    </div>
+
+    <div class="feature">
+        <span>✔</span>
+        <p>Compare jobs side by side</p>
+    </div>
+
+</section>
+
 </body>
 
 <footer>
-    <hr>
+    
     <div class="f">
     <div class="footer-col">
       <h3>sammonyy</h3>
@@ -107,6 +159,7 @@ if you already have an account you can log in directly.
     </div>
 <ul>
     <li style="display: inline-block;" >
+        
         <h4>Job Seekers</h4>
         <ul>
             <li><a href="search.html" style="text-decoration: none;">Browse Jobs</a></li>
@@ -116,6 +169,7 @@ if you already have an account you can log in directly.
     </li>
 
     <li style="display: inline-block;">
+        
         <h4>Employers</h4>
         <ul>
              <li><a href="joblist.html" style="text-decoration: none;">Jobs List</a></li>
@@ -126,6 +180,7 @@ if you already have an account you can log in directly.
     </li>
 
     <li  style="display: inline-block;">
+        
         <h4>Platform</h4>
         <ul>
             <li><a href="index.html" style="text-decoration: none;">Home</a></li>
@@ -138,6 +193,7 @@ if you already have an account you can log in directly.
 
     <hr>
 </li>
+</div>
 <div class="f2">
     <p style="text-align: center;"> &copy 2026 sammonyy. All rights reserved.</p>
     </div>

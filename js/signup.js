@@ -38,7 +38,7 @@ document.getElementById("signupForm").addEventListener("submit", function(e) {
         alert("Incorrect password");
         return;
     }
-
+    localStorage.setItem("username", username);
     localStorage.setItem("email", email);
     localStorage.setItem("name", name);
     localStorage.setItem("password", password);

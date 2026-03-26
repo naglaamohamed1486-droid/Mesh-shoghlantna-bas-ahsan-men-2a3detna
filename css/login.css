@@ -103,7 +103,7 @@ button {
 
 
 button[type="submit"] {
-    background-color: #2ca9bc;
+    background: linear-gradient(135deg, #F46734, #EA2E6D);;
     color: white;
 }
 
@@ -218,7 +218,7 @@ item{
 display: flex;
     align-items: center;
     gap: 15px;
-    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(135deg, #F46734, #EA2E6D);
     padding: 15px 5px;
     border-radius: 10px;
     margin-bottom: 15px;

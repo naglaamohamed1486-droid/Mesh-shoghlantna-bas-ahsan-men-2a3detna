@@ -86,7 +86,7 @@ button {
 
 
 button[type="submit"] {
-    background-color: #2ca9bc;
+    background:linear-gradient(135deg, #F46734, #EA2E6D);
     color: white;
 }
 
@@ -203,7 +203,7 @@ body > section {
 
 
 .feature span {
-    color: orange;
+    background: linear-gradient(135deg, #F46734, #EA2E6D);
     font-size: 18px;
 }
 
@@ -212,7 +212,23 @@ body > section {
     margin: 0;
     color: white;
 }
+.role-options {
+  display: flex;
+  gap: 20px; 
+}
 
+.role-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+.company {
+  display: none;
+}
+.sab{
+    text-decoration: none;
+    color: #fff;
+}
 
 @media screen and (max-width: 768px) {
     footer .f {

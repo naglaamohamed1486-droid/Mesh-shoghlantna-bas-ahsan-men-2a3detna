@@ -72,15 +72,28 @@
 <label for="age">Age:</label><br>
 <input type="number" id="age" name="age" min="0"  placeholder="Enter your age"  required>
 </div>
-<div class="role">
+<!-- <div class="role">
 <label for="role">Role:</label><br>
 <select id="role" name="role" required>
 <option value="">Select role</option>
 <option value="admin"> Company Admin</option>
 <option value="user">User</option>
 </select>
+</div> -->
+<div class="role">
+  <label>Role:</label><br>
+  <div class="role-options">
+    <label>
+      <input type="radio" name="role" value="admin" required>Company Admin
+      
+    </label>
+    <label>
+      <input type="radio" name="role" value="user" required> User
+     
+    </label>
+  </div>
 </div>
-
+<br>
 <div class="company">
 <label for="company">Company Name:</label><br>
 <input type="text" id="company" placeholder="Enter Company Name " name="company">
@@ -122,7 +135,7 @@ if you already have an account you can log in directly.
         </svg>
     </div>
 
-    <h1>Join JobFlow</h1>
+    <h1>Join <a class="sab" href="index.html">Saboba</a> </h1>
     <br><br>
     <p>Create your account and unlock access to thousands of curated job opportunities</p>
 

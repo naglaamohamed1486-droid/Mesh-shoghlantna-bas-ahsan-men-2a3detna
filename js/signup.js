@@ -23,7 +23,7 @@ roleRadios.forEach(radio => {
 
 document.getElementById("signupForm").addEventListener("submit", function(e) {
     e.preventDefault(); 
-
+    let name = document.getElementById("username").value;
     let email = document.getElementById("email").value;   
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirm_password").value;
@@ -40,8 +40,10 @@ document.getElementById("signupForm").addEventListener("submit", function(e) {
     }
 
     localStorage.setItem("email", email);
+    localStorage.setItem("name", name);
     localStorage.setItem("password", password);
     localStorage.setItem("role", role);
+    
 
     if (role === "admin") {
         window.location.href = "dashboard.html";

@@ -5,182 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/joblist.css">
+    <link rel="stylesheet" href="./css/navbar.css">
 </head>
-<header>
-    
-        <h1>Job Listings</h1>
-        <button><a href="addjob.html" style="text-decoration: none;" class="bb">+Add Job</a></button>
-   
-  </header>
-  <hr>
 <body>
+    <header>
+    <nav class="nav">
+    <a href="index.html" class="logo">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F1729"/>
+      <stop offset="50%" stop-color="#1a2456"/>
+      <stop offset="100%" stop-color="#2B3EEE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="32" height="32" rx="8" fill="url(#mainGradient)"/>
+  <path d="M20 10a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v3h8v-3Z"
+        fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 22V13a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z"
+        fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 17h-2.4A3 3 0 0 1 9 14.7L7.6 11.3A1 1 0 0 1 8.6 10H23.4a1 1 0 0 1 .9 1.3L23 14.7A3 3 0 0 1 20.6 17H18"
+        fill="none" stroke="#F46734" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="14" y="16" width="4" height="3" rx="1"
+        fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+      <p class="slog">Saboba</p>
+    </a>
+    <ul class="links" id="links"></ul>
+    <div class="right">
+    <div class="burger" id="burger" >
+    <button onclick=""><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#213a73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+    </div>
+    <div class="logs" id="logs"></div>
+    </div>
+  </nav>
+  </header>
+
+<div class="dashboard">
+  <header class="header">
+  <div class="header-flex">
+    <div class="header-content">
+      <h1>Your Posted Jobs</h1>
+    </div>
     
+    <button class="add-job-btn" onclick="window.location.href='addjob.html'">
+      + Add Job
+    </button>
+  </div>
+</header>
 
-<table class="tbl" cellspacing="40" id="jobsTable">
-    <th>Title</th>
-    <th>Location</th>
-    <th>Type</th>
-    <th>Applications</th>
-    <th>Actions</th>
+<div id="jobList" class="job-list">
+  </div>
 
-    <tr>
-        <td>
-            <img src="./assets/imgs/Software Engineer.jpeg" alt="" width="150" height="100"><br>
-            <strong>Software Engineer</strong>
-            
-        </td>
-        <td>
-            Alexandria
-        </td>
-        <td>
-            Full-Time
-        </td>
-        <td>20</td>
-         <td>
-            <button><a href="editjob.html" style="text-decoration: none;">Edit</a> <button>Delete</button>
-        </td>
-    </tr>
+  <div id="jobList" class="job-list">
+    </div>
+</div>
 
-    <tr>
-        <td>
-            <img src="./assets/imgs/photographer.jpg" alt="" width="150" height="100"><br>
-            <strong>Photographer</strong>
-            
-        </td>
-        <td>
-            Giza
-        </td>
-        <td>
-            Full-Time
-        </td>
-        <td>
-           22 
-        </td>
-        <td>
-            <button><a href="editjob.html" style="text-decoration: none;">Edit</a> <button>Delete</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src="./assets/imgs/graphic-design.webp" alt="" width="150" height="100"><br>
-            <strong>Graphic Designer</strong>
-            
-        </td>
-        <td>
-            Alexandria
-        </td>
-        <td>
-            Part-Time
-        </td>
-        <td>23</td>
-         <td>
-            <button><a href="editjob.html" style="text-decoration: none;">Edit</a> <button>Delete</button>
-        </td>
-    </tr>
+<footer class="footer">
+    <div class="footer__inner">
 
-    <tr>
-        <td>
-            <img src="./assets/imgs/civil.jpg" alt="" width="150" height="100"><br>
-            <strong>Civil Engineer</strong>
-            
-        </td>
-        <td>
-            Alexandria
-        </td>
-        <td>
-            Full-Time
-        </td>
-        <td>13</td>
-         <td>
-            <button><a href="editjob.html" style="text-decoration: none;">Edit</a> <button>Delete</button>
-        </td>
-    </tr>
+      <div class="footer__top">
 
-    <tr>
-        <td>
-            <img src="./assets/imgs/data-scientist.jpg" alt="" width="150" height="100"><br>
-            <strong>Data Scientist</strong>
-        
-        </td>
-        <td>
-            Boston,MA
-        </td>
-        <td>
-            Contract
-        </td>
-        <td>32</td>
-         <td>
-            <button><a href="editjob.html" style="text-decoration: none;">Edit</a> <button>Delete</button>
-        </td>
-    </tr>
+        <div class="footer__brand">
+          <div class="footer__brand-name">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#2B3EEE"/>
+              <path d="M20 10a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v3h8v-3Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M24 22V13a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            saboba
+          </div>
+          <p class="footer__brand-desc">Find your dream job or hire the best talent — all in one place.</p>
+        </div>
 
-    <tr>
-        <td>
-            <img src="./assets/imgs/content writer.jpg" alt="" width="150" height="100"><br>
-            <strong>Content Writer</strong>
-            
-        </td>
-        <td>
-            Cairo
-        </td>
-        <td>
-            Full-Time
-        </td>
-        <td>5</td>
-         <td>
-            <button><a href="editjob.html" style="text-decoration: none;">Edit</a> <button>Delete</button>
-        </td>
-    </tr>
+        <div>
+          <h4 class="footer__col-title">Job Seekers</h4>
+          <ul class="footer__col-links">
+            <li><a href="search.html">Browse Jobs</a></li>
+            <li><a href="AppliedJobs.html">Applications</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+          </ul>
+        </div>
 
-    
+        <div>
+          <h4 class="footer__col-title">Employers</h4>
+          <ul class="footer__col-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="joblist.html">Jobs List</a></li>
+            <li><a href="addjob.html">Add Job</a></li>
+          </ul>
+        </div>
 
-    
+        <div>
+          <h4 class="footer__col-title">Platform</h4>
+          <ul class="footer__col-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
 
-</table>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 JobFlow. All rights reserved.</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
 <script src="./js/joblist.js"></script>
+<script src="./js/navbar.js"></script>
 </body>
-<footer>
-    <hr>
-    <div class="f">
-    <div class="footer-col">
-      <h3>sammonyy</h3>
-      <p>Find your dream job or hire the best talent.</p>
-    </div>
-<ul>
-    <li style="display: inline-block;" >
-        <h4>Job Seekers</h4>
-        <ul>
-            <li><a href="search.html" style="text-decoration: none;">Browse Jobs</a></li>
-           
-            <li><a href="AppliedJobs.html" style="text-decoration: none;">Applications</a></li>
-        </ul>
-    </li>
-
-    <li style="display: inline-block;">
-        <h4>Employers</h4>
-        <ul>
-             <li><a href="joblist.html" style="text-decoration: none;">Jobs List</a></li>
-            <li><a href="addjob.html" style="text-decoration: none;">Add Job</a></li>
-            <li><a href="editjob.html" style="text-decoration: none;">Edit Job</a></li>
-
-        </ul>
-    </li>
-
-    <li  style="display: inline-block;">
-        <h4>Platform</h4>
-        <ul>
-            <li><a href="index.html" style="text-decoration: none;">Home</a></li>
-            <li><a href="signup.html" style="text-decoration: none;">Sign up</a></li>
-            <li><a href="login.html" style="text-decoration: none;">Login</a></li>
-
-        </ul>
-    </li>
-    </ul>
-
-    <hr>
-</li>
-<div class="f2">
-    <p style="text-align: center;"> &copy 2026 sammonyy. All rights reserved.</p>
-    </div>
-</footer>
 </html>

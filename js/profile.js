@@ -20,7 +20,7 @@ const adminStats = {
   totalApplications: 4780,
 };
 
-function buildNavbar(user) {
+/* function buildNavbar(user) {
   document.getElementById('navUsername').textContent = user.name;
   const navLinks = document.getElementById('navLinks');
   const userLinks = [
@@ -36,7 +36,7 @@ function buildNavbar(user) {
   ];
   const links = user.role === 'admin' ? adminLinks : userLinks;
   navLinks.innerHTML = links.map(l => `<li><a href="${l.href}">${l.label}</a></li>`).join('');
-}
+} */
 
 function buildProfileHeader(user) {
   const badgeClass = user.role === 'admin' ? 'role-badge--admin' : 'role-badge--user';
@@ -257,7 +257,7 @@ function showToast(msg) {
 
 function init() {
   const content = document.getElementById('profileContent');
-  buildNavbar(currentUser);
+  /* buildNavbar(currentUser); */
   if (currentUser.role === 'admin') {
     content.innerHTML = buildAdminProfile(currentUser);
   } else {

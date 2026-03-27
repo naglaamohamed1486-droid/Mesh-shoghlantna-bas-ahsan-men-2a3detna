@@ -4,8 +4,6 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
-
-    
     let savedEmail = localStorage.getItem("email");
     let savedPassword = localStorage.getItem("password");
     let savedRole = localStorage.getItem("role");

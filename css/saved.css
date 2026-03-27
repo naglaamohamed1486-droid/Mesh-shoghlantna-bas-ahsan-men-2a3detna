@@ -1,103 +1,50 @@
-body{
-    font-family: Arial;
-    background:#f5f6f9;
-    margin:40px;
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 5rem 2rem;
 }
 
-.header h1{
-    margin-bottom:5px;
+.empty-state__icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
-.header p{
-    color:gray;
+.empty-state__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0F1729;
+  margin-bottom: 0.5rem;
 }
 
-.jobs{
-    margin-top:30px;
+.empty-state__desc {
+  font-size: 0.95rem;
+  color: #6B7280;
+  margin-bottom: 1.5rem;
 }
 
-.job-card{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    margin-bottom:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+.empty-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #2B3EEE;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
-.name{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.empty-btn:hover {
+  background: #1e2fd4;
+  transform: translateY(-2px);
 }
 
-.name p{
-    color:gray;
-}
-
-.status{
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:14px;
-}
-
-.accepted{
-    background:#2ecc71;
-    color:white;
-}
-.rejected{
-    background: red;
-    color: white;
-}
-
-.progress-status{
-    background:#e0e0e0;
-}
-
-.progress{
-    display:flex;
-    align-items:center;
-    margin:25px 0;
-}
-
-.step{
-    text-align:center;
-}
-
-.circle{
-    width:30px;
-    height:30px;
-    border-radius:50%;
-    background:#ddd;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.done .circle{
-    background:#3b82f6;
-    color:white;
-}
-
-.active .circle{
-    border:2px solid #3b82f6;
-}
-
-.line{
-    height:3px;
-    width:80px;
-    background:#3b82f6;
-}
-
-.gray{
-    background:#ccc;
-}
-
-.details{
-    padding:8px 16px;
-    border:none;
-    border-radius:6px;
-    background:#eee;
-    cursor:pointer;
+/* Active save button */
+.saved--active path {
+  fill: #EF4343;
 }
 
 .footer {

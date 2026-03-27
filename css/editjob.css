@@ -25,6 +25,7 @@ body {
   background-color: var(--background);
   opacity: 0;
   animation: fadeIn 0.8s forwards;
+  padding-top: 68px;
 }
 
 /* Fade-in Animation */

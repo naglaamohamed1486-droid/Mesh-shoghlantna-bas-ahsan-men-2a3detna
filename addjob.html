@@ -83,14 +83,25 @@
                         <input id="year" type="number" placeholder="Years" required>
                     </div>
             <div class="input-group">
-    <label for="job-type">Job Type</label>
-    <div class="custom-select-wrapper">
-        <select id="job-type" name="job-type" required>
-            <option value="full-time">On-site</option>
-            <option value="contract">Remote</option>
-            <option value="freelance">Hybrid</option>
-        </select>
-    </div>
+    <label for="job-type">Work Mode</label>
+    <select id="job-type" name="job-type" required>
+        <option value="" disabled selected>--Select Work Mode--</option>
+        <option value="onsite">On-site</option>
+        <option value="remote">Remote</option>
+        <option value="hybrid">Hybrid</option>
+        <option value="freelance">Freelance</option>
+    </select>
+</div>
+    <div class="input-group">
+    <label for="employment-type">Employment Type</label>
+    <select id="employment-type" required>
+    <option value="" disabled selected>--Select Employment Type--</option>
+    <option value="full-time">Full-time</option>
+    <option value="part-time">Part-time</option>
+    <option value="freelance">Freelance</option>
+    <option value="contract">Contract</option>
+</select>
+</div>
 </div>
                 </div>
             </div>

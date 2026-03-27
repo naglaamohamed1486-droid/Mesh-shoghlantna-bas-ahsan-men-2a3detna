@@ -14,93 +14,7 @@ body {
     margin: 0 auto;
 }
 
-/* =========================
-   Navbar
-   ========================= */
-.active-link { color: #2B3EEE !important; font-weight: 700; }
-
-.btn-post-nav {
-    background: #F46734;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-right: 15px;
-    transition: 0.3s;
-}
-
-.btn-post-nav:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
-}
-
-.user-menu-wrapper {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-.nav-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    transition: transform 0.3s;
-}
-
-.nav-avatar:hover {
-    transform: scale(1.1);
-}
-
-.nav-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    background: white;
-    min-width: 180px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border-radius: 12px;
-    z-index: 1000;
-    padding: 10px 0;
-    animation: fadeIn 0.3s ease;
-}
-
-.nav-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-.user-menu-wrapper:hover .nav-dropdown {
-    display: block;
-}
-
-/* =========================
-   Hero Section
-   ========================= */
-.about-hero {
-    background: var(--gradient-hero);
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    animation: fadeUp 1s ease;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-    opacity: 0.9;
-}
+/* 
 
 /* =========================
    Mission Section
@@ -280,8 +194,7 @@ body {
    Footer
    ========================= */
 .footer {
-    
-  background: #0F1729;
+  background: #0F1729;;
   color: rgba(255,255,255,0.7);
   padding: 4rem 2rem 2rem;
 }

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Saboba Project</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#0F1729"/>
+                            <stop offset="100%" stop-color="#2B3EEE"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="32" height="32" rx="10" fill="url(#logoGradient)"/>
+                    <path d="M12 12V10a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="#F46734" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 13a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1v-8Z" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="14" y="16" width="4" height="2.5" rx="0.5" fill="#fff"/>
+                </svg>
+                <p class="slog">Saboba</p>
+            </a>
+            
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="joblist.html">Jobs</a></li>
+                <li><a href="about.html" class="active-link">About Us</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+
+            <div class="right">
+                <a href="addjob.html" class="btn-post-nav">+ Post Job</a>
+                <div class="user-menu-wrapper">
+                    <img src="https://ui-avatars.com/api/?name=User&background=2B3EEE&color=fff" class="nav-avatar" alt="Profile">
+                    <div class="nav-dropdown">
+                        <a href="profile.html">My Profile</a>
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="AppliedJobs.html">My Applications</a>
+                        <a href="saved.html">Saved Jobs</a>
+                        <hr>
+                        <a href="#" id="logoutBtn" style="color: #ff4d4d;">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1 class="hero-title">Building the Future of Work</h1>
+            <p class="hero-subtitle">Saboba is more than just a job board. We are a bridge between talent and opportunity, helping thousands find their dream careers.</p>
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="container mission-grid">
+            <div class="mission-text">
+                <span class="badge">Our Mission</span>
+                <h2>Connecting Ambition with Opportunity</h2>
+                <p>We started Saboba with a simple idea: job hunting shouldn't be a struggle. Our platform is designed to make the process transparent, fast, and empowering for both seekers and employers.</p>
+                <div class="mission-stats">
+                    <div class="mini-stat">
+                        <h3 id="count1">0</h3>
+                        <p>Jobs Posted</p>
+                    </div>
+                    <div class="mini-stat">
+                        <h3 id="count2">0</h3>
+                        <p>Happy Users</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mission-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600" alt="Team Work" style="border-radius: 20px; width: 100%;">
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Saboba?</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon-box">🎯</div>
+                    <h3>Quality Matching</h3>
+                    <p>We ensure that employers find candidates that truly fit their company culture and requirements.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon-box">⚡</div>
+                    <h3>Fast Process</h3>
+                    <p>Our streamlined application system saves time for both recruiters and job seekers.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon-box">🛡️</div>
+                    <h3>Verified Jobs</h3>
+                    <p>Every job posted on Saboba goes through a verification process to ensure safety and trust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-icon">01</div>
+                    <h3>Create Profile</h3>
+                    <p>Build your professional profile and highlight your skills to recruiters.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">02</div>
+                    <h3>Search & Apply</h3>
+                    <p>Use filters to find jobs and apply to multiple positions with one click.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">03</div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your applications through your personal dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-box">
+                <p>"The only way to do great work is to love what you do. We help you find that work."</p>
+                <span>— Saboba Team</span>
+            </div>
+        </div>
+    </section>
+
+   <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card anim-up">
+                    <img src="https://ui-avatars.com/api/?name=Sama&background=2B3EEE&color=fff" alt="Sama">
+                    <h3>Sama</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-card anim-up" style="animation-delay: 0.1s;">
+                    <img src="https://ui-avatars.com/api/?name=Naglaa&background=0F1729&color=fff" alt="Naglaa">
+                    <h3>Naglaa</h3>
+                    <p>Project Team Leader</p>
+                </div>
+                <div class="team-card anim-up" style="animation-delay: 0.2s;">
+                    <img src="https://ui-avatars.com/api/?name=Yahia&background=F46734&color=fff" alt="Yahia">
+                    <h3>Yahia</h3>
+                    <p>Product Manager</p>
+                </div>
+                <div class="team-card anim-up" style="animation-delay: 0.3s;">
+                    <img src="https://ui-avatars.com/api/?name=Habiba&background=2B3EEE&color=fff" alt="Habiba">
+                    <h3>Habiba</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="team-card anim-up" style="animation-delay: 0.4s;">
+                    <img src="https://ui-avatars.com/api/?name=Mohannad&background=0F1729&color=fff" alt="Mohannad">
+                    <h3>Mohannad</h3>
+                    <p>Backend Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__top">
+
+        <div class="footer__brand">
+          <div class="footer__brand-name">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#2B3EEE"/>
+              <path d="M20 10a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v3h8v-3Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M24 22V13a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            saboba
+          </div>
+          <p class="footer__brand-desc">Find your dream job or hire the best talent — all in one place.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Job Seekers</h4>
+          <ul class="footer__col-links">
+            <li><a href="search.html">Browse Jobs</a></li>
+            <li><a href="AppliedJobs.html">Applications</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Employers</h4>
+          <ul class="footer__col-links">
+            <li><a href="joblist.html">Jobs List</a></li>
+            <li><a href="addjob.html">Add Job</a></li>
+            <li><a href="editjob.html">Edit Job</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Platform</h4>
+          <ul class="footer__col-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 JobFlow. All rights reserved.</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+    <script src="./js/navbar.js"></script>
+    <script src="./js/about.js"></script>
+</body>
+</html>

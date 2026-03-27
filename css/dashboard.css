@@ -180,72 +180,79 @@
 .link{
     text-decoration: none;
 }
+
+
+
+/* Footer */
 .footer {
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    color: white;
-    padding: 40px 60px;
-    margin-top: 50px;
+  background: #0F1729;;
+  color: rgba(255,255,255,0.7);
+  padding: 4rem 2rem 2rem;
 }
 
-/* الكونتينر الأساسي */
-.footer .f {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-    background:linear-gradient(135deg, #0f172a, #1e3a8a);
+.footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* كل عمود */
-.footer-col {
-    min-width: 180px;
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
-/* العناوين */
-.footer-col h3 {
-    margin-bottom: 10px;
+.footer__brand-name {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  display: flex; align-items: center; gap: 0.4rem;
 }
 
-.footer-col h4 {
-    margin-bottom: 10px;
+.footer__brand-desc {
+  font-size: 0.88rem;
+  line-height: 1.65;
 }
 
-/* اللينكات */
-.footer-col ul {
-    list-style: none;
-    padding: 0;
+.footer__col-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fb591f;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
 }
 
-.footer-col ul li {
-    margin-bottom: 8px;
+.footer__col-links { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.footer__col-links a {
+  font-size: 0.88rem;
+  color:#E5E7EB;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer__col-links a:hover { color: #F46734; }
+
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.83rem;
 }
 
-.footer-col ul li a {
-    text-decoration: none;
-    color: #cbd5f5;
-    font-size: 14px;
-    transition: 0.3s;
+.footer__bottom a {
+  color: #E5E7EB;
+  transition: color 0.2s;
+  text-decoration: none;
 }
 
-.footer-col ul li a:hover {
-    color: white;
-}
-
-
-.footer hr {
-    border: none;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    margin: 20px 0;
-}
-
-
-.f2 {
-    text-align: center;
-    font-size: 13px;
-    color: #cbd5f5;
-    margin-top: 20px;
-}
-
+.footer__bottom a:hover { color: #F46734; }
+ 
 
 
 

@@ -5,7 +5,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     btn.innerHTML = 'Sending...';
     btn.style.opacity = '0.7';
 
-    // التحويل بعد ثانية واحدة لمحاكاة الإرسال
+   
     setTimeout(() => {
         window.location.href = "thank-you.html";
     }, 1000);

@@ -22,7 +22,7 @@ function animateValue(id, start, end, duration) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // الأرقام دي تقدري تغيريها براحتك
-    animateValue("count1", 0, 1250, 2000); // الوظائف
-    animateValue("count2", 0, 5400, 2000); // المستخدمين
+
+    animateValue("count1", 0, 1250, 2000); 
+    animateValue("count2", 0, 5400, 2000); 
 });

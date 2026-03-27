@@ -276,7 +276,9 @@ input:focus, select:focus, textarea:focus {
   background: #0F1729;;
   color: rgba(255,255,255,0.7);
   padding: 4rem 2rem 2rem;
+  
 }
+
 
 .footer__inner {
   max-width: 1100px;
@@ -311,16 +313,19 @@ input:focus, select:focus, textarea:focus {
   color: #fb591f;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  margin-left: 30px;
   margin-bottom: 1rem;
+
 }
 
-.footer__col-links { display: flex; flex-direction: column; gap: 0.6rem; }
+.footer__col-links { display: flex; flex-direction: column; gap: 0.6rem; list-style: none; }
 
 .footer__col-links a {
   font-size: 0.88rem;
   color:#E5E7EB;
   text-decoration: none;
   transition: color 0.2s;
+  
 }
 .footer__col-links a:hover { color: #F46734; }
 
@@ -328,11 +333,8 @@ input:focus, select:focus, textarea:focus {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 1.5rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  font-size: 0.83rem;
 }
-
 .footer__bottom a {
   color: #E5E7EB;
   transition: color 0.2s;
@@ -340,6 +342,11 @@ input:focus, select:focus, textarea:focus {
 }
 
 .footer__bottom a:hover { color: #F46734; }
+@media (max-width: 768px) {
+      .footer__top {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* =========================
    Utilities

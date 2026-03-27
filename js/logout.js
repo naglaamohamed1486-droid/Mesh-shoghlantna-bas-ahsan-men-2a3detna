@@ -1,4 +1,4 @@
 function logout() {
-    localStorage.removeItem("role");
+    localStorage.removeItem("used-role");
     window.location.href = "index.html"; 
 }

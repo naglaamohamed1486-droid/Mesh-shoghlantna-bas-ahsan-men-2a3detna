@@ -1,4 +1,4 @@
-const role = localStorage.getItem("role");
+const role = localStorage.getItem("used-role");
 function navbar() {
     const nav = document.getElementById("links");
     const btn = document.getElementById("logs");

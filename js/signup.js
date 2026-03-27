@@ -44,6 +44,7 @@ document.getElementById("signupForm").addEventListener("submit", function(e) {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
     localStorage.setItem("role", role);
+    localStorage.setItem("used-role",role)
     
 
     if (role === "admin") {

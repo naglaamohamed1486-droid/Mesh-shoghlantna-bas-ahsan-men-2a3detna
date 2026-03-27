@@ -75,16 +75,16 @@ h4{
     display: flex;
     justify-items: center;
     justify-content: center;
-    height: 45px;
+    height: 80px;
     width: 100%;
     margin: 20px;
-   
+    margin-top: 40px;
 }
 
 #search{
     max-width: 250vw;
     width: 70%;
-    height: 100%;
+    height: 75%;
     padding: 1px 15px;
     border: #E5E7EB 1px solid;
     border-radius: 15px;
@@ -95,7 +95,7 @@ h4{
     justify-content: center;
     text-align: center;
      color: #0F1729;
-     height: 100%;
+     height: 75%;
      width: 100px;
      margin-left: 35px;
      background-color:hsl(16, 90%, 58%,0.4);
@@ -258,15 +258,16 @@ img{
     line-break: normal;
 }
 .tag li{
+    color: #F46734;
     display: inline;
     padding: 5px 10px ;
     margin:0px 7px;
     border: #F46734 1px solid ;
     border-radius: 7px;
-    background-color: hsl(16, 90%, 58%,0.2);
+    background-color: #ffe5d0;
 }
 .tag li:hover{
-    background-color:hsl(16, 90%, 58%,0.5);
+    background-color:#ffc392;
 }
 hr{
     border: none;

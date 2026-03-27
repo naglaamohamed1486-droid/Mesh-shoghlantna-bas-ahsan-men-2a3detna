@@ -17,9 +17,9 @@ fetch("js/jobs.json").then(res => res.json()).then(jobs => {
         card.querySelector(".job-name").textContent = job.title;
         card.querySelector(".company").textContent = job.company;
         card.querySelector(".type").textContent = job.type;
-        card.querySelector(".location").textContent = ' '+job.location;
-        card.querySelector(".salary").textContent = ' '+job.salary;
-        
+        card.querySelector(".location").textContent = job.location;
+        card.querySelector(".salary").textContent = job.salary;
+        card.querySelector(".timestamp").textContent = job.time;
         const tagsContainer = card.querySelector(".tag");
         job.tags.forEach(tag => {
             const li = document.createElement("li");

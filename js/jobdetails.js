@@ -82,6 +82,11 @@ document.getElementById("next").addEventListener("click", () =>
   goTo(current < job.gallery.length - 1 ? current + 1 : 0)
 );
 
+function applyJob(id) {
+    window.location.href = `form.html?id=${job.id}`;
+  }
 
- 
-})
+  document.getElementById("apply").addEventListener("click", () => {
+    applyJob(job.id);
+});
+  })

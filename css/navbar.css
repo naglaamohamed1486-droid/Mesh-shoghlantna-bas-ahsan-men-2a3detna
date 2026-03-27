@@ -1,3 +1,16 @@
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #F6F7F9;
+  color: #0F1729;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -144,4 +157,5 @@ background-color: #F3F4FC;
 .signup:hover{
    box-shadow: #a4adf3 3px 3px 10px;
 }
+
 

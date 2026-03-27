@@ -1,7 +1,4 @@
-/* ============================================
-  saboba — profile.js
-   بيقرر User أو Admin ويبني الصفحة
-   ============================================ */
+
 
 // ── بياخد البيانات من localStorage (من signup) ──
 const currentUser = {
@@ -20,23 +17,7 @@ const adminStats = {
   totalApplications: 4780,
 };
 
-/* function buildNavbar(user) {
-  document.getElementById('navUsername').textContent = user.name;
-  const navLinks = document.getElementById('navLinks');
-  const userLinks = [
-    { href: 'search.html',      label: 'Find Jobs' },
-    { href: 'saved.html',       label: 'Saved' },
-    { href: 'AppliedJobs.html', label: 'Applied' },
-    { href: 'compare.html',     label: 'Compare' },
-  ];
-  const adminLinks = [
-    { href: 'search.html',      label: 'Find Jobs' },
-    { href: 'AppliedJobs.html', label: 'Applied' },
-    { href: 'dashboard.html',   label: 'Dashboard' },
-  ];
-  const links = user.role === 'admin' ? adminLinks : userLinks;
-  navLinks.innerHTML = links.map(l => `<li><a href="${l.href}">${l.label}</a></li>`).join('');
-} */
+
 
 function buildProfileHeader(user) {
   const badgeClass = user.role === 'admin' ? 'role-badge--admin' : 'role-badge--user';
@@ -167,7 +148,7 @@ function buildAdminProfile(user) {
       <div class="quick-actions">
         <a href="addjob.html" class="quick-action-btn"><span class="quick-action-btn__icon">➕</span> Add Job</a>
         <a href="joblist.html" class="quick-action-btn"><span class="quick-action-btn__icon">📋</span> Jobs List</a>
-        <a href="users.html" class="quick-action-btn"><span class="quick-action-btn__icon">👥</span> Manage Users</a>
+        
         <a href="dashboard.html" class="quick-action-btn"><span class="quick-action-btn__icon">📊</span> Dashboard</a>
       </div>
     </div>

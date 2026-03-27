@@ -20,6 +20,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
         return;
     }
 
+     localStorage.setItem("used-role", savedRole); 
     
     if (savedRole === "user") {
         window.location.href = "search.html";

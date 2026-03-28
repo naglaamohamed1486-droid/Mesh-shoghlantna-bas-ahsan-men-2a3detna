@@ -86,8 +86,12 @@ background-color:#F3F4FC ;
    
 }
 .profile:hover{
+    color: #2B3EEE;
 border: 1px solid #d5d7da;
 background-color: #F3F4FC;
+}
+.profile svg{
+    margin-right: 4px;
 }
 .logout{
     width: 80px;

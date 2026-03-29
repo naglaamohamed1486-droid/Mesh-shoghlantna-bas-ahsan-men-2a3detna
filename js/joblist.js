@@ -43,14 +43,27 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="job-info">
                         <h3>${job.title}</h3>
                         <div class="job-details">
-                            <span>${job.company}</span> • 
-                            <span>${job.type}</span> • 
-                            <span>$${job.salary}</span>
+                            <div class="job-comp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF6B4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                            </svg> ${job.company}</div> 
+
+                              <span class="job-typ"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> ${job.employment || 'Full-time'}</span>
+
+                            <div class="job-sal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg> ${job.salary}</div>
                         </div>
                     </div>
 
                     <div class="tags">
-                        <span class="badge">${job.employment || 'Full-time'}</span>
+                        
+
+                        <div class="badge">${job.type}</div>
                     </div>
 
                     <div class="action-btns">

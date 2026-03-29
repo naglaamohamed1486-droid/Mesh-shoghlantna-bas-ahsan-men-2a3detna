@@ -18,7 +18,7 @@ main{
     margin-top: 90px;
 }
 .hero{
-height:190px ;
+height:290px ;
 
   background: radial-gradient(
       circle at 20% 30%,
@@ -58,6 +58,8 @@ height:190px ;
    -webkit-text-fill-color: transparent;
 }
 .card{
+position: relative;
+top:-100px;
 min-width: 600px;
 display: flex;
 flex-direction: column;
@@ -67,7 +69,9 @@ border: #E5E7EB 3px solid;
 border-radius: 20px;
 margin: 40px;
 padding: 30px;
-box-shadow: 0 8px 20px rgba(0,0,0,0.08)
+box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+background: linear-gradient(135deg, #F6F7F9, hsl(233, 60%, 97% ,0.9));;
 }
 .Job-Title{
   color:#0F1729;

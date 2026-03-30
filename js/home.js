@@ -41,7 +41,7 @@ if (searchForm) {
   document.querySelectorAll('.tag[data-search]').forEach(tag => {
     tag.addEventListener('click', () => {
       const q = tag.dataset.search;
-      window.location.href = `search.html?q=${encodeURIComponent(q)}`;
+      window.location.href = `search.html?q=${encodeURIComponent(q)}&type=tag`;
     });
   });
 

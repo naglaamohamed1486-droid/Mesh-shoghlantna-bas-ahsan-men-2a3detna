@@ -156,7 +156,7 @@
   {
     "id": 8,
     "Cover": "https://plus.unsplash.com/premium_photo-1674506653774-6f51d6ebe799?w=1000&auto=format&fit=crop&q=60",
-    "title": "Cybersecurity Specialist",
+    "title": "Cybersecurity DEV",
     "company": "SecureNet",
     "location": "Giza, Egypt",
     "time": "2 days ago",
@@ -658,5 +658,72 @@
     ],
     "companyLocation": "Cairo",
     "employees": "25-60"
+  },
+  
+  {
+    "id": 31,
+    "Cover": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=160&fit=crop",
+    "title": "Senior Frontend Developer",
+    "company": "TechCorp",
+    "location": "San Francisco, CA",
+    "time": "2 days ago",
+    "tags": ["React", "TypeScript", "Remote"],
+    "salary": "$120k – $160k",
+    "type": "Full-time",
+    "exp": "5+ years",
+    "description": "Build and maintain modern frontend applications using React and TypeScript with a focus on performance and user experience.",
+    "required": ["React", "TypeScript", "REST APIs"],
+    "benefit": ["Remote work", "Health insurance", "Stock options"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1000",
+      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=1000",
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1000"
+    ],
+    "companyLocation": "USA",
+    "employees": "200-500"
+  },
+  {
+    "id": 32,
+    "Cover": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=160&fit=crop",
+    "title": "Backend Engineer",
+    "company": "DataFlow Inc",
+    "location": "New York, NY",
+    "time": "1 week ago",
+    "tags": ["Node.js", "Python", "AWS"],
+    "salary": "$130k – $170k",
+    "type": "Full-time",
+    "exp": "3+ years",
+    "description": "Develop scalable backend systems and APIs using Node.js and Python, with cloud deployment on AWS.",
+    "required": ["Node.js", "Python", "AWS"],
+    "benefit": ["Flexible hours", "Remote options", "Health insurance"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000",
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1000",
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1000"
+    ],
+    "companyLocation": "USA",
+    "employees": "100-300"
+  },
+  {
+    "id": 33,
+    "Cover": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&h=160&fit=crop",
+    "title": "UI/UX Designer",
+    "company": "DesignHub",
+    "location": "Austin, TX",
+    "time": "3 days ago",
+    "tags": ["Figma", "User Research", "Hybrid"],
+    "salary": "$90k – $120k",
+    "type": "Full-time",
+    "exp": "2+ years",
+    "description": "Design intuitive and engaging user interfaces while conducting user research and usability testing.",
+    "required": ["Figma", "User Research", "Prototyping"],
+    "benefit": ["Hybrid work", "Creative freedom", "Health insurance"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1000",
+      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1000",
+      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=1000"
+    ],
+    "companyLocation": "USA",
+    "employees": "50-150"
   }
 ]

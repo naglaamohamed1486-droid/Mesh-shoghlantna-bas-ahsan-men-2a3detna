@@ -206,12 +206,42 @@ input:focus {
   color: #0c20cd;
   font-weight: 600;
 }
+.btn{
+  display: inline-flex;
+   width: 100%;
+  align-self: center;
+ 
 
+}
+.ca{
+  color: #EF4343;
+  word-spacing: 3px;
+  display: flex;
+  width: 40%;
+  align-self: center;
+  margin: 15px;
+  margin-left: 50px;
+  margin-top: 30px;
+  height: 50px;
+  border: hsl(0, 84%, 60%,0.4) solid 1px;
+  border-radius: 28px;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  background-color: #ffffff;
+  font-size: large;
+ }
+
+.ca:hover{
+  background-color: #EF4343;
+  color: #ffffff;
+  box-shadow: #555 1px 3px 20px;
+}
 .submit {
   color: #ffffff;
   word-spacing: 3px;
   display: flex;
-  width: 80%;
+  width: 40%;
   align-self: center;
   margin: 15px;
   margin-top: 30px;
@@ -220,7 +250,7 @@ input:focus {
   border-radius: 28px;
   align-items: center;
   justify-content: center;
-  font-size: larger;
+  font-size: large;
   background-color: #f40000;
   background: linear-gradient(135deg, hsl(16, 90%, 58%,0.9), hsl(340, 82%, 55%,0.9));;
 }

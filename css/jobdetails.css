@@ -144,13 +144,14 @@ background-color: #ffe5d0;
 .grid{
   position: relative;
   top: -110px;
-  width: 95%;
+  width: 100%;
   display :grid;
   align-items: center;
   justify-content: center;
   grid-template-columns : 75fr 25fr;
   gap: 30px;
  margin-top: 0px;
+ padding: 0px 20px;
 }
 .info {
   list-style: none;

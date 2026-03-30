@@ -322,6 +322,26 @@ hr{
 .view:hover{
     background-color: #1927a4;
 }
+
+#reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     color: #EF4343;
+     height: 75%;
+     width: 100px;
+     margin-left: 15px;
+     background:hsl(0, 84%, 60%,0.1);
+      border: #E5E7EB solid 1.5px;
+     border-radius: 17px;
+}
+#reset:hover{
+    color: #ffffff;
+    background-color: #EF4343;
+    border: #EF4343 1px solid;
+    box-shadow: hsl(0, 84%, 60% ,0.7) 1px 2px 15px;
+}
 .footer {
   background: #0F1729;;
   color: rgba(255,255,255,0.7);

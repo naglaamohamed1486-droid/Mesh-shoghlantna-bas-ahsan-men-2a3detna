@@ -48,6 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
         job.style.display = "none";
                 }
         });
+
+         updateResetButton();
     }
   
     searchName.addEventListener("input",  filterJobs);
@@ -67,4 +69,40 @@ document.addEventListener("DOMContentLoaded", () => {
     filterJobs();
 });
 
+    
+    function Filtered() {
+    return (
+        searchName.value.trim() !== "" ||
+        searchLoc.value !== "all locations" ||
+        searchType.value !== "all types" ||
+        searchTags.value !== "all-tags"
+    );
+}
+function updateResetButton() {
+    let resetBtn = document.getElementById("reset");
+    
+    if (Filtered()) {
+        if (!resetBtn) {
+            resetBtn = document.createElement("button");
+            resetBtn.id = "reset";
+            resetBtn.textContent = "✕ Clear";
+            resetBtn.addEventListener("click", () => {
+                searchName.value = "";
+                searchLoc.value = "all locations";
+                searchType.value = "all types";
+                searchTags.value = "all-tags";
+                window.history.replaceState({}, "", window.location.pathname);
+                filterJobs();
+                updateResetButton();
+            });
+
+               filterbtn.insertAdjacentElement("afterend", resetBtn);
+        }
+    }
+    else {
+        resetBtn?.remove();
+    }
+}
+
 });
+

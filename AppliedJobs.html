@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applied Jobs</title>
-    <!-- <link rel="stylesheet" href="./css/Appliedjobs.css"> -->
-     <link rel="stylesheet" href="./css/">
+    <link rel="stylesheet" href="css/appliedjobs.css">
+    <link rel="stylesheet" href="./css/navbar.css">
 </head>
 <body>
    <header>
@@ -41,61 +41,23 @@
     </div>
   </nav>
   </header>
-  
-
-<body>
-
-<main>
-
-<header class="header">
-    <h1>Applied Jobs</h1>
-    <p>3 applications</p>
-</header>
-
-<hr>
-
-    <div>
-    <h3>Senior Frontend Developer</h3>
-    <p>TechCorp - San Francisco, CA</p>
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                
+                <button class="track-btn">📈 Track Progress</button>
+            </div>
+            <h1 class="page-title">Applied Jobs</h1>
+            <p class="app-count"><span id="job-count">0</span> applications submitted</p>
+        </div>
     </div>
 
+    <main class="content-section">
+        <div class="container" id="job-container">
+            </div>
+    </main>
 
-   <div>
-    <h3>in progress -> Applied -> Under Review -> Interview -> Accepted</h3>
-   </div>
-   <button class="details"><a href="./jobdetail/Frontend.html">View Details</a></button>
-
-
-<hr>
-
-    <div>
-    <h3>Backend Engineer</h3>
-    <p>DataFlow Inc - New York, NY</p>
-    </div>
-
-   
-
-
-    <div>
-    <h3>in progress -> Applied -> Under Review -> Interview -> processing</h3>
-    </div>
-    <button class="details"><a href="./jobdetail/backend.html">View Details</a></button>
-<hr>
-
-
-    <div>
-    <h3>UI/UX Designer</h3>
-    <p>Austin, TX</p>
-    </div>
-
-    <div>
-    <h3>in progress -> Applied -> Under Review -> Interview -> Rejected</h3>
-   </div>
-   <button class="details"><a href="./jobdetail/ui.html">View Details</a></button>
-
-
-</main>
-
+    
 <footer class="footer">
     <div class="footer__inner">
 
@@ -143,7 +105,7 @@
       </div>
 
       <div class="footer__bottom">
-        <span>© 2026 JobFlow. All rights reserved.</span>
+        <span>© 2026 saboba. All rights reserved.</span>
         <div style="display:flex;gap:1.5rem;">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
@@ -153,6 +115,8 @@
     </div>
   </footer>
 
-</body>
 
+    <script src="js/applied.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
 </html>

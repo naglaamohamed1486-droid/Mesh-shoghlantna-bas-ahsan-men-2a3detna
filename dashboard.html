@@ -6,7 +6,9 @@
     <title>DashBoard</title>
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/dashboard.css">
+    <script src="./js/dashboard.js" defer></script>
 </head>
+
 <body>
      <nav class="nav">
     <a href="index.html" class="logo">
@@ -103,7 +105,7 @@
         <div class="card">
             <div class="icon orange">💼</div>
             <div class="info">
-                <span class="number">8</span>
+                <span class="number" id="totalJobsCount">0</span>
                 <span class="label">Total Jobs</span>
             </div>
         </div>
@@ -111,7 +113,8 @@
         <div class="card">
             <div class="icon blue">📄</div>
             <div class="info">
-                <span class="number">0</span>
+                <span class="number"  id="totalApplicationsCount">0</span>
+
                 <span class="label">Applications</span>
             </div>
         </div>

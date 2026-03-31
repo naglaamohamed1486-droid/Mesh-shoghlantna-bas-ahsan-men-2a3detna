@@ -88,5 +88,59 @@ function applyJob(id) {
 
   document.getElementById("apply").addEventListener("click", () => {
     applyJob(job.id);
+  });
+  
+  // بيجيب الـ saved jobs من localStorage
+function getSavedJobs() {
+  return JSON.parse(localStorage.getItem("savedJobs") || "[]");
+}
+
+// بيحفظ الـ saved jobs في localStorage
+function setSavedJobs(jobs) {
+  localStorage.setItem("savedJobs", JSON.stringify(jobs));
+}
+
+// بيتحقق لو الـ job اتحفظت
+function isJobSaved(jobId) {
+  return getSavedJobs().some(j => j.id === jobId);
+}
+
+// بيضيف أو يشيل الـ job
+function toggleSave(job) {
+  let saved = getSavedJobs();
+  const exists = saved.some(j => j.id === job.id);
+
+  if (exists) {
+    saved = saved.filter(j => j.id !== job.id); 
+  } else {
+    saved.push(job); 
+  }
+
+  setSavedJobs(saved);
+  return !exists; 
+  }
+  function updateSavedCount() {
+  const count = getSavedJobs().length;
+    localStorage.setItem("saved", count);
+  }
+ // Save button logic for details page
+const saveBtn = document.getElementById("save"); 
+
+if (isJobSaved(job.id)) {
+    saveBtn.style.color = "#EF4343";
+    saveBtn.querySelector("path").setAttribute("fill", "#EF4343");
+}
+
+saveBtn.addEventListener("click", () => {
+    const nowSaved = toggleSave(job);
+    updateSavedCount();
+
+    if (nowSaved) {
+        saveBtn.querySelector("path").setAttribute("fill", "#EF4343");
+        showToast("❤️ Job saved!");
+    } else {
+        saveBtn.querySelector("path").setAttribute("fill", "none");
+        showToast("💔 Job removed!");
+    }
 });
   })

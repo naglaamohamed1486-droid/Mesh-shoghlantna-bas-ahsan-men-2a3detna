@@ -2,7 +2,7 @@
 const jobImages = {
     'frontend': './assets/imgs/frontend.jpg',
     'content writer': './assets/imgs/content writer.jpg',
-    'cooking': './assets/imgs/cooking.jpg',
+    'cook': './assets/imgs/cooking.jpg',
     'customer support': './assets/imgs/customer support.jpg',
     'data scientist': './assets/imgs/data-scientist.jpg',
     'financial': './assets/imgs/financial.jpg',

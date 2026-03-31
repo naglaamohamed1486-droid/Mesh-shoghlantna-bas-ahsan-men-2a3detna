@@ -1,4 +1,24 @@
 /* الجزء الأزرق */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #f4f7fe;
+    color: #1a202c;
+    display: flex;
+    flex-direction: column; 
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
 .top-section {
     height: 250px;
     background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
@@ -224,7 +244,7 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 1rem;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 .footer__col-links { display: flex; flex-direction: column; gap: 0.6rem; list-style: none;}

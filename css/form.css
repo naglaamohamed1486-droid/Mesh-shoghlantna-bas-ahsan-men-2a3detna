@@ -42,11 +42,11 @@ height:290px ;
   justify-content: center;
 }
 .tit{
-    margin-left: 25px;
+    margin-left: 205px;
     color: #FFFFFF;
 }
 .hero p{
-    margin-left: 25px;
+    margin-left: 205px;
     margin-top: 15px;
     color: #FFFFFF;
    font-size: 16px;
@@ -82,7 +82,6 @@ background: linear-gradient(135deg, #F6F7F9, hsl(233, 60%, 97% ,0.9));;
   margin-bottom: 2px;
 }
 .data{
-  max-width:400px ;
   display: inline-flex;
   align-content:space-evenly;
   justify-content: center;
@@ -134,7 +133,7 @@ form{
   background: #fdfdff;
   padding: 0 0.5px;
   color: #f40000;
-  font-size: 2rem;
+  font-size: 16px;
   pointer-events: none;
   transition: 0.3s ease;
 }
@@ -147,7 +146,7 @@ form{
 .in input:valid + label {
   top: -10px;
   left: 10px;
-  font-size: 0.75rem;
+  font-size: 12px;
   color: #000f96;
   background: #fdfdff;
   padding: 0 4px;

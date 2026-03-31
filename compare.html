@@ -48,17 +48,26 @@
   </header>
 
   <main>
-    <div class="hero"></div>
+    <div class="hero">
+      <h1>Compare Jobs </h1>
+      <h4>Compare jobs side by side and choose the opportunity that fits you best.</h4>
+    </div>
     <div class="big" >
     <a href="./search.html" class="btn"><svg fill="#030a68" height="14px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" stroke="#030a68"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M26.105,21.891c-0.229,0-0.439-0.131-0.529-0.346l0,0c-0.066-0.156-1.716-3.857-7.885-4.59 c-1.285-0.156-2.824-0.236-4.693-0.25v4.613c0,0.213-0.115,0.406-0.304,0.508c-0.188,0.098-0.413,0.084-0.588-0.033L0.254,13.815 C0.094,13.708,0,13.528,0,13.339c0-0.191,0.094-0.365,0.254-0.477l11.857-7.979c0.175-0.121,0.398-0.129,0.588-0.029 c0.19,0.102,0.303,0.295,0.303,0.502v4.293c2.578,0.336,13.674,2.33,13.674,11.674c0,0.271-0.191,0.508-0.459,0.562 C26.18,21.891,26.141,21.891,26.105,21.891z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g></svg>Back to Search</a>
     <div class="name">
       <div class="n">
+        <div class="head">
         <h2 id="name1" class="title"></h2>
+        <button class="cancel" id="cancel1">X</button>
+        </div>
         <h3 id="comp1" class="comp"></h3>
     </div>
 
     <div class="n">
-      <h2 id="name2" class="title"></h2>
+      <div class="head">
+        <h2 id="name2" class="title"></h2>
+        <button class="cancel" id="cancel2">X</button>
+        </div>
       <h3 id="comp2" class="comp"></h3>
       </div>
     </div>
@@ -66,11 +75,12 @@
     <div class="card">
        <div class="data">
         <ul>
-          <li> Salary</li>
-          <li>Location</li>
-          <li> Type</li>
-          <li>Experience</li>
-          <li>Benifits</li>
+          <li class="money"> Salary</li>
+          <li class="location">Location</li>
+          <li class="type"> Type</li>
+          <li class="ex">Experience</li>
+          <li class="benifited">Benifits</li>
+         
         </ul>
       </div>
       <div class="job" id="job1">
@@ -80,6 +90,7 @@
         <li class="Type" id="type1"></li>
         <li class="Experience" id="exp1"></li>
         <li class="benifit" id="benifit1"></li>
+        <li class="b"><button id="apply1" class="apply"> apply</button></li>
         </div>
       </div>
       <div class="job" id="job2">
@@ -88,7 +99,8 @@
         <li class="Location" id="location2"></li>
         <li class="Type" id="type2"></li>
         <li class="Experience" id="exp2"></li>
-           <li class="benifit" id="benifit1"></li>
+        <li class="benifit" id="benifit2"></li>
+         <li class="b"><button id="apply2" id="apply1" class="apply"> apply</button></li>
         </div>
       </div>
     </div>
@@ -152,6 +164,7 @@
 
     </div>
   </footer>
+  <script src="./js/compare.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/logout.js"></script>
 </body>

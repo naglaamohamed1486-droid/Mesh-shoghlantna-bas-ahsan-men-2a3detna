@@ -1,6 +1,7 @@
 html { scroll-behavior: smooth; }
 
 body {
+ position: relative;
   font-family: 'Inter', sans-serif;
   background: #F6F7F9;
   color: #0F1729;
@@ -10,7 +11,9 @@ body {
 
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
-
+header{
+    position: relative;
+}
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -86,7 +89,7 @@ background-color:#F3F4FC ;
    
 }
 .profile:hover{
-    color: #2B3EEE;
+color: #2B3EEE;
 border: 1px solid #d5d7da;
 background-color: #F3F4FC;
 }
@@ -113,6 +116,8 @@ background-color: #F3F4FC;
     display: none;
     font-size: 35px;
     cursor: pointer;
+    align-items: center;
+    align-self: center;
 }
 .burger button{
     display: flex;
@@ -124,17 +129,19 @@ background-color: #F3F4FC;
 }
 
 @media (max-width: 780px) {
-    .links {
+    .links{
+        display: none;
+    }
+    .menue {
         display: none;
         flex-direction: column;
-        position: absolute;
         top: 68px;
         right: 0;
         width: 200px;
         padding: 20px;
     }
 
-    .links.active {
+    .menue.active {
         display: flex;
     }
 
@@ -163,7 +170,6 @@ background-color: #F3F4FC;
 }
 
 .menue{
-    margin-top: 70px;
     width: 100%;
     align-self: center;
     justify-self: center;
@@ -175,6 +181,8 @@ background-color: #F3F4FC;
     align-items: center;
     justify-content: center;
     justify-items: center;
+    line-height: 1.6rem;
+   
 }
 .menue li{
     color: #1a2456;
@@ -187,4 +195,10 @@ background-color: #F3F4FC;
    width: 90%;
     border: hsl(220, 9%, 46% ,0.2) 1px solid;
     border-radius: 20px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 }

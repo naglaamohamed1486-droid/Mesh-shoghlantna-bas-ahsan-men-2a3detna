@@ -3,8 +3,6 @@ const jobcard = container.querySelector(".job-card");
 
 console.log("Template found:", jobcard);
 
-
-
 // بيجيب الـ saved jobs من localStorage
 function getSavedJobs() {
   return JSON.parse(localStorage.getItem("savedJobs") || "[]");
@@ -26,29 +24,66 @@ function toggleSave(job) {
   const exists = saved.some(j => j.id === job.id);
 
   if (exists) {
-    saved = saved.filter(j => j.id !== job.id); 
+    saved = saved.filter(j => j.id !== job.id);
   } else {
-    saved.push(job); 
+    saved.push(job);
   }
 
   setSavedJobs(saved);
-  return !exists; 
+  return !exists;
 }
 
-/* 
+/*
    UPDATE SAVED COUNT في الـ profile
- */
+*/
 function updateSavedCount() {
   const count = getSavedJobs().length;
   localStorage.setItem("saved", count);
 }
 
-//load jobs from JSON
+/* compare */
+function compare(job) {
+  let list = JSON.parse(localStorage.getItem("compareJobs") || "[]");
+
+ 
+  if (list.some(j => j.id === job.id)) {
+    list = list.filter(j => j.id !== job.id);
+    localStorage.setItem("compareJobs", JSON.stringify(list));
+    updateCompare(job.id, false);
+    return;
+  }
+
+  
+  if (list.length >= 2) {
+    showToast("⚠️ You can only compare 2 jobs at a time!");
+    return;
+  }
+
+  
+  list.push(job);
+  localStorage.setItem("compareJobs", JSON.stringify(list));
+  updateCompare(job.id, true);
+}
+
+
+function updateCompare(jobId, isAdded) {
+  const btn = document.querySelector(`[data-compare-id="${jobId}"]`);
+ 
+  if (btn) {
+    btn.classList.toggle("active", isAdded);
+    btn.querySelector("path").setAttribute("stroke", isAdded ? "#ffffff" : "#F46734");
+    btn.style.background = isAdded ? "#F46734" : "";
+  }
+}
+
 
 fetch("js/jobs.json")
   .then(res => res.json())
   .then(jobs => {
     console.log("Jobs loaded:", jobs);
+
+    
+    const currentCompare = JSON.parse(localStorage.getItem("compareJobs") || "[]");
 
     jobs.forEach(job => {
       const card = jobcard.cloneNode(true);
@@ -61,7 +96,7 @@ fetch("js/jobs.json")
       card.querySelector(".salary").textContent = job.salary;
       card.querySelector(".timestamp").textContent = job.time;
 
-      
+     
       const tagsContainer = card.querySelector(".tag");
       job.tags.forEach(tag => {
         const li = document.createElement("li");
@@ -69,23 +104,49 @@ fetch("js/jobs.json")
         tagsContainer.appendChild(li);
       });
 
-      
+     
       card.querySelector(".view a").setAttribute("href", `jobDetails.html?id=${job.id}`);
 
-     
       const saveBtn = card.querySelector(".saved");
+      const comparebtn = card.querySelector(".compare");
 
-      
+
+      comparebtn.setAttribute("data-compare-id", job.id);
+
+      // الحالة الأولية للـ save button
       if (isJobSaved(job.id)) {
-        saveBtn.style.color = "#EF4343";
         saveBtn.querySelector("path").setAttribute("fill", "#EF4343");
       }
 
+     
+      if (currentCompare.some(j => j.id === job.id)) {
+        comparebtn.style.background = "#F46734";
+  
+        comparebtn.querySelector("path").setAttribute("stroke", "#ffffff");
+      }
+
+     
+      comparebtn.addEventListener("click", () => {
+        compare(job);
+        const updatedList = JSON.parse(localStorage.getItem("compareJobs") || "[]");
+        const isNowAdded = updatedList.some(j => j.id === job.id);
+
+        if (isNowAdded) {
+          comparebtn.style.background = "#F46734";
+          comparebtn.querySelector("path").setAttribute("stroke", "#ffffff");
+          showToast("✅ Job added to compare!");
+        } else {
+          comparebtn.style.background = "";
+          comparebtn.querySelector("path").setAttribute("stroke", "#F46734");
+          showToast("❌ Job removed from compare!");
+        }
+      });
+
+      // save button click
       saveBtn.addEventListener("click", () => {
         const nowSaved = toggleSave(job);
         updateSavedCount();
 
-       
         if (nowSaved) {
           saveBtn.querySelector("path").setAttribute("fill", "#EF4343");
           showToast("❤️ Job saved!");
@@ -97,11 +158,12 @@ fetch("js/jobs.json")
 
       container.appendChild(card);
     });
+
+    
     document.dispatchEvent(new CustomEvent("jobsLoaded"));
   });
 
-//toast function
-
+// toast function
 function showToast(msg) {
   const toast = document.createElement("div");
   toast.textContent = msg;

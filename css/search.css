@@ -18,8 +18,7 @@ main{
     margin-bottom: 50px;
 }
 .hero{
-height:190px ;
-
+ height:250px ;
   background: radial-gradient(
       circle at 20% 30%,
       rgba(43, 62, 238, 0.25),
@@ -36,17 +35,21 @@ height:190px ;
       #1a2456 50%,
       #2B3EEE 100%
     );
-
+position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-h1{
+.hero h1{
+    position: relative;
+    top: -20px;
     color: #F6F7F9;
     margin: 5px;
     margin-left: 100px;
 }
-main h4{
+.hero h4{
+    position: relative;
+    top: -20px;
     color:#F46734;
     margin:0px 105px ;
     text-shadow: hsl(16, 100%, 91%,0.4) 5px 3px 20px;
@@ -67,7 +70,7 @@ main h4{
      background-color: hsla(0, 0%, 95%, 0.97);
      border-radius: 20px;
      position: relative;
-      top:-30px;
+      top:-60px;
       z-index: 3;
 }
 .filter:hover{
@@ -106,8 +109,8 @@ main h4{
      border-radius: 17px;
 }
 #f:hover{
-    border-color:hsl(234, 85%, 55% ,0.8);
-    box-shadow: hsl(234, 85%, 55% ,0.4) 1px 2px 15px;
+    border-color:hsl(234, 85%, 55% ,0.9);
+    box-shadow: hsl(234, 85%, 55% ,0.4) 1px 2px 20px;
 }
 .tags {
     display: inline-flex;
@@ -331,6 +334,7 @@ hr{
      color: #EF4343;
      height: 75%;
      width: 100px;
+     margin-right: 10px;
      margin-left: 15px;
      background:hsl(0, 84%, 60%,0.1);
       border: #E5E7EB solid 1.5px;

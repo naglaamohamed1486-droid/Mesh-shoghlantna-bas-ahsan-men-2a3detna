@@ -6,6 +6,7 @@ fetch("js/jobs.json").then(res => res.json()).then(data => {
         document.body.innerHTML = "<h1> Job not found</h1>";
         return;   
   }
+   const currentCompare = JSON.parse(localStorage.getItem("compareJobs") || "[]"); 
   document.getElementById("cover").src=job.Cover
     document.getElementById("title").textContent = job.title;
     document.getElementById("company").textContent = job.company;
@@ -143,4 +144,46 @@ saveBtn.addEventListener("click", () => {
         showToast("💔 Job removed!");
     }
 });
+  /* compare */
+  const comparebtn = document.querySelector(".compare");
+  comparebtn.setAttribute("data-compare-id", job.id); 
+   
+  if (currentCompare.some(j => j.id === job.id)) { 
+        comparebtn.style.background = "#F46734";
+        comparebtn.querySelector("path").setAttribute("stroke", "#ffffff");
+  }
+  
+  function compare(job) {
+  let list = JSON.parse(localStorage.getItem("compareJobs") || "[]");
+         
+    if (list.some(j => j.id === job.id)) {
+        list = list.filter(j => j.id !== job.id);
+        localStorage.setItem("compareJobs", JSON.stringify(list));
+        return;
+            }
+
+  if (list.length >= 2) { 
+    showToast("⚠️ You can only compare 2 jobs at a time!");
+    return;
+  }
+
+  list.push(job);
+  localStorage.setItem("compareJobs", JSON.stringify(list));
+  updateCompare(job.id, true);
+}
+   comparebtn.addEventListener("click", () => {
+        compare(job);
+        const updatedList = JSON.parse(localStorage.getItem("compareJobs") || "[]");
+        const isNowAdded = updatedList.some(j => j.id === job.id);
+
+        if (isNowAdded) {
+            comparebtn.style.background = "#F46734";
+            comparebtn.querySelector("path").setAttribute("stroke", "#ffffff"); 
+            showToast("✅ Job added to compare!");
+        } else {
+            comparebtn.style.background = "";
+            comparebtn.querySelector("path").setAttribute("stroke", "#F46734"); 
+            showToast("❌ Job removed from compare!");
+        }
+      });
   })

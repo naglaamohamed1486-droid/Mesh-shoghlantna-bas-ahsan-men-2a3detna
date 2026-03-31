@@ -31,6 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const myAddedJobs = JSON.parse(localStorage.getItem('myJobs')) || [];
     const jobListContainer = document.getElementById('jobList');
 
+    if(myAddedJobs == 0){
+        jobListContainer.innerHTML =`
+        <div class="emp">
+        <p>You Don't have any jobs</p>
+        </div>
+        `
+        return;
+    }
+
     if (jobListContainer) {
         jobListContainer.innerHTML = ''; 
         myAddedJobs.forEach(job => {

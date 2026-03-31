@@ -75,6 +75,13 @@ body {
     box-shadow: 0 6px 20px rgba(255, 92, 92, 0.4);
 }
 
+.emp{
+  font-weight: 700;
+  text-align: center;
+  padding: 100px 0;
+  color: grey;
+  text-shadow: #262323;
+}
 
 .dashboard {
     flex: 1 0 auto; 

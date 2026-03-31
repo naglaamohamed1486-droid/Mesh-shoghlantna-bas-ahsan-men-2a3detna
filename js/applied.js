@@ -13,7 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
         jobContainer.innerHTML = `
             <div style="text-align:center; padding: 100px 0; color:#6b7280;">
                 <p>You haven't applied for any jobs yet.</p>
-                <a href="search.html" style="color: #2B3EEE; text-decoration: none; font-weight: 600;">Browse Jobs →</a>
+                 
+                <a href="search.html" style="
+                display: inline-block;
+                background-color: #2B3EEE;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: 600;
+                border-radius: 12px;
+                margin-top: 15px;
+                 ">Browse Jobs →</a>
+                
             </div>`;
         return;
     }

@@ -14,6 +14,9 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
+main{
+  margin-top: 68px;
+}
 
 /* ============================================
    CONTACT

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("js/jobs.json")
         .then(res => res.json())
         .then(data => {
-            // ✅ fixed: كان list — الصح List (case sensitive)
+          
             const job1 = data.find(j => j.id == List[0].id);
             const job2 = data.find(j => j.id == List[1].id);
 
@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
             Job(job1, "1");
             Job(job2, "2");
 
-            // ✅ fixed: لازم يكونوا جوه الـ .then عشان job1 و job2 يكونوا متاحين
             document.getElementById("apply1").addEventListener("click", () => {
                 window.location.href = `form.html?id=${job1.id}`;
             });

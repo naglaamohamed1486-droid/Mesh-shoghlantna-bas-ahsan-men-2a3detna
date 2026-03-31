@@ -5,7 +5,10 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #f8fafc;
     margin: 0;
-    padding-top: 80px;
+
+}
+main{
+    margin-top: 68px;
 }
 
 .container {

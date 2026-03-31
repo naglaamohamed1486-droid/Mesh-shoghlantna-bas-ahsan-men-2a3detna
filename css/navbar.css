@@ -139,6 +139,7 @@ background-color: #F3F4FC;
         right: 0;
         width: 200px;
         padding: 20px;
+        margin-bottom: 0px;
     }
 
     .menue.active {
@@ -170,19 +171,21 @@ background-color: #F3F4FC;
 }
 
 .menue{
+    position: fixed;
+    top: 68px;
     width: 100%;
-    align-self: center;
+    display: flex;
     justify-self: center;
     list-style: none;
     margin-bottom: 0px;
     border: #E5E7EB 1px solid;
     text-align: center;
-    background-color: hsl(220, 13%, 91% ,0.4);
+    background-color:  rgba(220, 222, 227, 0.97);;
     align-items: center;
     justify-content: center;
     justify-items: center;
     line-height: 1.6rem;
-   
+    z-index: 99;
 }
 .menue li{
     color: #1a2456;

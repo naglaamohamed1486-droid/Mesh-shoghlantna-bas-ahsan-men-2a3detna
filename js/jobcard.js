@@ -131,11 +131,16 @@ fetch("js/jobs.json")
         const updatedList = JSON.parse(localStorage.getItem("compareJobs") || "[]");
         const isNowAdded = updatedList.some(j => j.id === job.id);
 
+        if (!isCurrentlyAdded && list.length >= 2) {
+            showToast("⚠️ You can only compare 2 jobs at a time!");
+            return;
+        }
+        
         if (isNowAdded) {
           comparebtn.style.background = "#F46734";
           comparebtn.querySelector("path").setAttribute("stroke", "#ffffff");
           showToast("✅ Job added to compare!");
-        } else {
+        } else  {
           comparebtn.style.background = "";
           comparebtn.querySelector("path").setAttribute("stroke", "#F46734");
           showToast("❌ Job removed from compare!");

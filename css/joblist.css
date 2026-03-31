@@ -18,10 +18,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
+main{
+  margin-top: 68px;
+}
 .header {
     height: 190px;
-    margin-top: 70px; 
     background: radial-gradient(
       circle at 20% 30%,
       rgba(43, 62, 238, 0.25),

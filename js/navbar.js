@@ -45,8 +45,27 @@ function navbar() {
     }
    
 }
+function footer() {
+    if (role === null) {
+        document.querySelector(".footer__col-links a[href='AppliedJobs.html']").setAttribute("href", "signup.html");
+        document.querySelector(".footer__col-links a[href='profile.html']").setAttribute("href", "signup.html");
+        document.querySelector(".footer__col-links a[href='dashboard.html']").setAttribute("href", "signup.html");
+        document.querySelector(".footer__col-links a[href='joblist.html']").setAttribute("href", "signup.html");
+        document.querySelector(".footer__col-links a[href='addjob.html']").setAttribute("href", "signup.html");
+    }
+    else if (role === "user") {
+        document.querySelector(".footer__col-links a[href='dashboard.html']").setAttribute("href", "signup.html");
+        document.querySelector(".footer__col-links a[href='joblist.html']").setAttribute("href", "signup.html");
+        document.querySelector(".footer__col-links a[href='addjob.html']").setAttribute("href", "signup.html");
+    }
+    else if (role === "admin") {
+        document.querySelector(".footer__col-links a[href='AppliedJobs.html']").setAttribute("href", "signup.html");
+        document.querySelector(".footer__col-links a[href='profile.html']").setAttribute("href", "profile.html");
+    }
+}
 
 document.addEventListener("DOMContentLoaded", navbar);
+document.addEventListener("DOMContentLoaded", footer);
 
 const burger = document.getElementById("burger");
 const div = document.getElementById("menue");
@@ -54,12 +73,10 @@ const div = document.getElementById("menue");
 burger.addEventListener('click', () => {
    if (div.style.display === "block") {
      div.style.display = "none";
-     document.querySelector("main").style.marginTop = "";
          }
          
         else if(div.style.display === "none") {
      div.style.display = "block";
-     document.querySelector("main").style.marginTop = "0"; 
   
         };
 

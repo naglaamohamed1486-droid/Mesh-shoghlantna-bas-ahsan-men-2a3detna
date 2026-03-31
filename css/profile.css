@@ -1,10 +1,12 @@
-
+main{
+   margin-top: 68px; /* navbar height */
+}
 
 /* ── Banner ── */
 .profile-banner {
   height: 200px;
   background: var(--gradient-hero);
-  margin-top: 68px; /* navbar height */
+ 
 }
 
 /* ── Main Layout ── */

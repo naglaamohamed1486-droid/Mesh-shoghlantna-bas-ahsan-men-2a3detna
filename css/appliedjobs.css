@@ -7,7 +7,6 @@
 html, body {
     height: 100%; 
 }
-
 body {
     font-family: 'Inter', -apple-system, sans-serif;
     background-color: #f4f7fe;
@@ -16,6 +15,9 @@ body {
     flex-direction: column; 
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+}
+main{
+   margin-top: 68px; 
 }
 
 .container {
@@ -27,7 +29,6 @@ body {
 .header {
    min-height: 190px;
   padding: 40px 10%;
-    margin-top: 70px; 
     background: radial-gradient(
       circle at 20% 30%,
       rgba(43, 62, 238, 0.25),

@@ -64,8 +64,6 @@ burger.addEventListener('click', () => {
         };
 
   });
-
-
 window.addEventListener("resize", () => {
     if (window.innerWidth > 768) {
         div.style.display = "none";

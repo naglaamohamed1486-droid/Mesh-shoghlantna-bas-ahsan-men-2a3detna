@@ -97,6 +97,7 @@ fetch("js/jobs.json")
 
       container.appendChild(card);
     });
+    document.dispatchEvent(new CustomEvent("jobsLoaded"));
   });
 
 //toast function

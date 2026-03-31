@@ -55,6 +55,9 @@ body {
     font-size: 2rem;
     font-weight: 800;
     letter-spacing: -0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .add-job-btn {
@@ -73,6 +76,12 @@ body {
     background-color: #ff4444;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 92, 92, 0.4);
+}
+
+.count{
+  color: #ff5c5c;
+  text-shadow: 0 6px 20px rgba(255, 92, 92, 0.4);;
+  font-weight: 700;
 }
 
 .emp{
@@ -125,9 +134,10 @@ body {
 }
 
 .company-logo img {
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .job-info {
@@ -158,7 +168,7 @@ body {
 .job-typ {
   background: #F1F5F9;
   color: #64748B;
-  padding: 5px 14px;
+  padding: 5px 1px;
   border-radius: 30px;
   font-size: 0.75rem;
   font-weight: 700;
@@ -191,31 +201,39 @@ body {
   gap: 10px;
 }
 
-.action-btns button {
-  padding: 9px 18px;
-  border-radius: 10px;
-  border: 1px solid #e2e8f0;
-  background: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  color: #4a5568;
-}
-
-.action-btns button:first-child:hover {
-  background-color: #f8fafc;
-  border-color: #a0aec0;
-}
-
 .delete-btn {
-  color: #e53e3e !important;
+  background-color:  #ff6b3d;
+  color: white;
+  border: 1px solid #ff6b3d;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .delete-btn:hover {
-  background-color: #fff5f5 !important;
-  border-color: #feb2b2 !important;
-  color: #c53030 !important;
+  background-color: #ff4444;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 92, 92, 0.4);
 }
+
+.edit-btn{
+  background-color:  #394ade;
+  color: white;
+  border: 1px solid #2B3EEE;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.edit-btn:hover{
+  background-color: #2B3EEE;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px #242f91;
+}
+
 
 
 .footer {
@@ -286,7 +304,7 @@ body {
     margin-left: 1.5rem;
 }
 
-/* --- 6. ريسبونسيف (Responsive) --- */
+
 @media (max-width: 768px) {
     .header { padding: 0 5%; }
     .footer__top { grid-template-columns: 1fr 1fr; }

@@ -43,6 +43,7 @@ fetch("js/jobs.json").then(res => res.json()).then(data => {
 
             applications.push(newApplication);
             localStorage.setItem('appliedJobs', JSON.stringify(applications));
+            localStorage.setItem("applied", applications.length);
             window.location.href = "AppliedJobs.html"; 
         });
     }

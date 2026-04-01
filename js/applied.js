@@ -51,6 +51,8 @@ function cancelJob(id){
         let jobs= JSON.parse(localStorage.getItem("appliedJobs"))|| [];
         jobs = jobs.filter(job => job.id !== id);
         localStorage.setItem('appliedJobs', JSON.stringify(jobs));
+        localStorage.setItem("totalApplications", jobs.length);
+        localStorage.setItem("applied", jobs.length);
         location.reload(); 
     }
 }

@@ -28,6 +28,8 @@ employment: document.getElementById('employment-type').value,
                 let savedJobs = JSON.parse(localStorage.getItem('myJobs')) || [];
                 savedJobs.push(jobData);
                 localStorage.setItem('myJobs', JSON.stringify(savedJobs));
+
+                localStorage.setItem("totalJobs", savedJobs.length);
               
 
                 setTimeout(() => {

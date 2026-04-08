@@ -12,9 +12,9 @@ const currentUser = {
 };
 
 const adminStats = {
-  totalUsers: 1240,
-  totalJobs: 320,
-  totalApplications: 4780,
+  totalUsers:        parseInt(localStorage.getItem("totalUsers")        || "0"),
+  totalJobs:         parseInt(localStorage.getItem("totalJobs")         || "0"),
+  totalApplications: parseInt(localStorage.getItem("totalApplications") || "0"),
 };
 
 

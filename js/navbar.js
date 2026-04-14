@@ -52,6 +52,7 @@ function footer() {
         document.querySelector(".footer__col-links a[href='dashboard.html']").setAttribute("href", "signup.html");
         document.querySelector(".footer__col-links a[href='joblist.html']").setAttribute("href", "signup.html");
         document.querySelector(".footer__col-links a[href='addjob.html']").setAttribute("href", "signup.html");
+        
     }
     else if (role === "user") {
         document.querySelector(".footer__col-links a[href='dashboard.html']").setAttribute("href", "signup.html");
